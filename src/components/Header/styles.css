@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    min-height: 50px;
+    border-bottom: 1px solid var(--first-color);
+}
+
+header h1 {
+    letter-spacing: -8px;
+}
+
+.header-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-infos a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding-right: 35px;
+    letter-spacing: 2.5px;
+    transition: all ease 0.2s;
+}
+
+.header-infos a:hover {
+    color: var(--first-color);
+}
+
