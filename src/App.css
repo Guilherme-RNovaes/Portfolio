@@ -5,7 +5,20 @@
   padding: 0;
   border: 0;
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0 10vw;
+}
+
+/* -------------------- Styles -------------------- */
 
 h1 {
   color: var(--first-color);
@@ -22,9 +35,4 @@ h2 {
   --second-color: #81A1C1;
   --text-color: #88C0D0;
   --link-color: #D8DEE9;
-}
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 0 10vw;
 }

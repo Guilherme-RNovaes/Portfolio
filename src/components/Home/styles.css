@@ -1,12 +1,18 @@
 .main-container {
-    padding-top: 20vh;
+    padding-top: 30vh;
     display: flex;
     justify-content: space-between;
 }
 
 .main-info {
     line-height: 3.5rem;
+    width: 35vw;
 }
+
+.main-hello {
+    font-weight: 600;
+}
+
 .main-info h1 {
     color: var(--text-color);
     font-size: 36pt;
@@ -21,7 +27,15 @@
     color: var(--first-color);
 }
 
-.main-button {
+.main-button-area {
+    width: 29vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-button-1 {
     margin-top: 20px;
     width: 200px;
     height: 70px;
@@ -34,12 +48,32 @@
     outline: 2px solid var(--text-color);
     outline-offset: 2px;
     transition: all ease 0.3s;
-
 }
 
-.main-button:hover {
+.main-button-1:hover {
     background-color: transparent;
     color: var(--text-color);
+    outline-offset: 5px;
+}
+
+.main-button-2 {
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 12pt;
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+    transition: all ease 0.3s;
+}
+
+.main-button-2:hover {
+    background-color: var(--second-color);
+    color: var(--background-color);
     outline-offset: 5px;
 }
 
@@ -60,4 +94,16 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 890px) {
+    .main-img {
+        display: none;
+    }
+
+    .main-info {
+        background-color: red;
+        width: 80vw;
+    }
+
 }

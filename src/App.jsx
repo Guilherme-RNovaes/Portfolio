@@ -1,6 +1,7 @@
 import Header from "./components/Header"
-import Main from "./components/Main"
-
+import Home from "./components/Home"
+import About from "./components/About"
+import Projects from "./components/Projects"
 
 import './App.css'
 
@@ -8,8 +9,9 @@ function App() {
   return (
     <div className="content-container">
       <Header />
-      <Main />
-      
+      <Home />
+      <About />
+      <Projects />
     </div>
   )
 }

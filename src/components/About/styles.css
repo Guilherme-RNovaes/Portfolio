@@ -1,0 +1,51 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 65px;
+}
+
+.about-title {
+    padding-bottom: 15vh;
+}
+
+.about-container-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+   
+}
+
+.about-img {
+    width: 250px;
+    height: 250px;
+}
+
+.about-info {
+    width: 40vw;
+}
+
+.about-info p{
+    padding-bottom: 15px;
+    
+}
+
+.skills-title {
+    margin: 15vh 0;
+}
+
+.skills-container-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}

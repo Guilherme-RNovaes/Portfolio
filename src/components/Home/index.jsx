@@ -3,16 +3,12 @@ import Typewriter from 'typewriter-effect';
 import Perfil from '../../img/Profile-Picture.png'
 import './styles.css'
 
-function Main() {
-    
-    const clicou = () => {(
-        console.log('tá clicado')
-    )}; 
-
+function Home() {
   return (
-    <main className='main-container'>
+    <main className='main-container' id='home'>
         <section className="main-info">
-            <h1>Oi, eu sou o <span>Guilherme</span></h1>
+            <p className='main-hello'>Olá, eu sou</p>
+            <h1><span>Guilherme Novaes</span></h1>
             <h2>
                 <Typewriter
                     options={{
@@ -25,7 +21,12 @@ function Main() {
                 />
             </h2>
             <p>Veja um pouco dos meus projetos.</p>
-            <button className='main-button' onClick={clicou}>Veja meu trabalho</button>
+            <div className='main-button-area'>
+                <button className='main-button-1'>Veja meu trabalho</button>
+                <a href='https://www.canva.com/design/DAFPb_DdYns/view' target='_blank'>
+                    <button className='main-button-2'>Download CV</button>
+                </a>
+            </div>
         </section>
         <section className="main-img">
             <div>
@@ -36,4 +37,4 @@ function Main() {
   )
 }
 
-export default Main
+export default Home

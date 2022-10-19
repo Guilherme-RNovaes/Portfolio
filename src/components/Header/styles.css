@@ -3,9 +3,16 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     min-height: 50px;
     border-bottom: 1px solid var(--first-color);
+    position: fixed;
+    width: 80vw;
+    z-index: 999;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header h1 {
@@ -19,6 +26,14 @@ header h1 {
     justify-content: space-between;
 }
 
+.header-infos, .header-hamburguer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding-right: 35px;
+    letter-spacing: 2.5px;
+    transition: all ease 0.2s;
+}
+
 .header-infos a {
     color: var(--text-color);
     text-decoration: none;
@@ -27,7 +42,51 @@ header h1 {
     transition: all ease 0.2s;
 }
 
-.header-infos a:hover {
+.header-infos, .header-hamburguer a:hover {
     color: var(--first-color);
+}
+
+.header-hamburguer-links,
+.header-hamburguer {
+    display: none;
+}
+
+.hamburguer-1, .hamburguer-2, .hamburguer-3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--first-color);
+
+}
+
+.header-hamburguer:hover  {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 890px) {
+    .header-infos {
+        display: none;
+    }
+
+    .header-hamburguer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-hamburguer-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 8vh;
+    }
+    .header-hamburguer-links {
+        padding-top: 15px;
+    }
+
+
 }
 
