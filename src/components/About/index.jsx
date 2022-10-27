@@ -1,6 +1,9 @@
+import { useState } from 'react';
+
 import './styles.css'
 import { DiBootstrap, DiCss3, DiHtml5, DiJavascript, DiNodejs, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si"
+
 
 function About() {
   return (
