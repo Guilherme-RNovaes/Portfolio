@@ -46,5 +46,6 @@ Continuarei estudando o React, biblioteca a qual estou adorando utilizar por con
 
 ## Autor
 
+- Portifólio - [Guilherme Rogério Novaes](https://guilherme-novaes-portifolio.vercel.app/)
 - LinkedIn - [Guilherme Rogério Novaes](https://www.linkedin.com/in/guilherme-r-novaes/)
 - GitHub - [Guilherme-RNovaes](https://github.com/Guilherme-RNovaes)

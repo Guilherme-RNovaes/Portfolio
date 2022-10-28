@@ -4,9 +4,9 @@ import './styles.css'
 
 function Projects() {
   return (
-    <div>
+    <main className='projects-container'>
       
-    </div>
+    </main> 
   )
 }
 
