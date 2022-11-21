@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect';
 import Button from '../Button';
 
-import Perfil from '../../img/Profile-Picture.png'
+import Perfil from '../../img/Profile-Picture.svg'
 import './styles.css'
 
 const Cv = "https://www.canva.com/design/DAFPb_DdYns/view"
@@ -25,9 +25,11 @@ function Home() {
             </h2>
             <p>Veja um pouco dos meus projetos.</p>
             <div className='main-button-area'>
-                <Button content='Veja meu trabalho' tp='1' />
+                <a href="#projetos">
+                    <Button content='Veja meu trabalho' style='1' />
+                </a>
                 <a href={Cv} target='_blank'>
-                    <Button content='Download CV' tp='2' />
+                    <Button content='Download CV' style='2' />
                 </a>
             </div>
         </section>

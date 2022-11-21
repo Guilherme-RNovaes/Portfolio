@@ -27,6 +27,10 @@
     width: 40vw;
 }
 
+.about-info {
+    min-width: 600px;
+}
+
 .about-info p{
     padding-bottom: 15px;
     
