@@ -1,9 +1,9 @@
 import "./styles.css"
 
-function Button({ content, style }) {
+function Button({ content, sty }) {
   return (
     <div>
-        <button className={`main-button-${style}`}>{content}</button>
+        <button className={`main-button-${sty}`}>{content}</button>
     </div>
   )
 }

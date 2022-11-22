@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import './styles.css'
 import { DiBootstrap, DiCss3, DiHtml5, DiJavascript, DiNodejs, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si"
@@ -10,9 +8,6 @@ function About() {
     <main className='about-container' id='sobre'>
         <h1 className='about-title'>Sobre Mim</h1>
         <section className='about-container-items'>
-            {/* <div className='about-img'>
-                <h2>Aqui irá alguma imagem</h2>
-            </div> */}
             <div className='about-info'>
                 <p>Olá, eu me chamo Guilherme Novaes, tenho 22 anos e estudo desenvolvimento front-end a 1 ano, desenvolvendo projetos particulares e estudando de forma autodidata.</p>
                 <p>No momento estou buscando oportunidades de emprego na área, aceito qualquer tipo de desafio e oportunidades. No momento tenho interesse em front-end com ReactJs, tecnologia a qual estou preferindo utilizar em meus atuais projetos por conta de sua facilidade e praticidade no uso de componentes para construção de uma página web.</p>

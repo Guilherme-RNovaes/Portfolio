@@ -26,10 +26,10 @@ function Home() {
             <p>Veja um pouco dos meus projetos.</p>
             <div className='main-button-area'>
                 <a href="#projetos">
-                    <Button content='Veja meu trabalho' style='1' />
+                    <Button content='Veja meu trabalho' sty='1' />
                 </a>
-                <a href={Cv} target='_blank'>
-                    <Button content='Download CV' style='2' />
+                <a href={Cv} target='blank'>
+                    <Button content='Download CV' sty='2' />
                 </a>
             </div>
         </section>
