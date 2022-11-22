@@ -14,7 +14,7 @@ function About() {
                 <h2>Aqui irá alguma imagem</h2>
             </div> */}
             <div className='about-info'>
-                <p>Olá, eu me chamo Guilherme Novaes, tenho 22 anos e estudo desenvolvimento front-end a 1 ano, desenvolvendo projetos particulares e estudando de forma auto didata.</p>
+                <p>Olá, eu me chamo Guilherme Novaes, tenho 22 anos e estudo desenvolvimento front-end a 1 ano, desenvolvendo projetos particulares e estudando de forma autodidata.</p>
                 <p>No momento estou buscando oportunidades de emprego na área, aceito qualquer tipo de desafio e oportunidades. No momento tenho interesse em front-end com ReactJs, tecnologia a qual estou preferindo utilizar em meus atuais projetos por conta de sua facilidade e praticidade no uso de componentes para construção de uma página web.</p>
             </div>
         </section>
