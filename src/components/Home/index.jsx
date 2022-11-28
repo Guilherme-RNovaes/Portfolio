@@ -4,7 +4,7 @@ import Button from '../Button';
 import Perfil from '../../img/Profile-Picture.svg'
 import './styles.css'
 
-const Cv = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4yJIQvEgu2AU51qP3eXknD%2FGuilherme-Novaes---CV%3Fnode-id%3D0%253A1%26t%3DvVJz3UfGEVFwXLEt-1"
+const Cv = "https://www.canva.com/design/DAFPb_DdYns/view"
 
 function Home() {
   return (
