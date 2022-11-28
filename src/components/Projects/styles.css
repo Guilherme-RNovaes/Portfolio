@@ -5,3 +5,11 @@
     margin-top: 100px;
     padding-top: 65px;
 }
+
+.projects-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+    width: 100%;
+}

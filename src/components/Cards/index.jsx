@@ -1,11 +1,13 @@
 import Button from "../Button"
-import { BiLink } from "react-icons/bi";
+// import { BiLink } from "react-icons/bi";
 
 import "./styles.css"
 
 function Cards({ title, info, tech, link, img }) {
-  if (title == '') {
-    <h1>imagem</h1>
+  if (img === '' || title === ''|| info === '' || tech === '' || link === '') {
+    return(
+      <h3 className="no-img">Em desenvolvimento...</h3>
+    )
   }
 
   return (
@@ -18,7 +20,7 @@ function Cards({ title, info, tech, link, img }) {
                 <p>{tech}</p>
                 <div className="card-more-details">
                     <a href={link}>
-                        <Button content='Visitar' style='3' /> 
+                        <Button content='Visitar' sty='3' /> 
                     </a>
                 </div>
             </div>

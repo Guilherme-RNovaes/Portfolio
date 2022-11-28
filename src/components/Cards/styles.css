@@ -1,0 +1,10 @@
+
+.no-img {
+    background-color: var(--first-color);
+    color: var(--background-color);
+    width: 350px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}

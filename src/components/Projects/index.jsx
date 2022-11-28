@@ -7,7 +7,27 @@ function Projects() {
     <main className='projects-container' id='projetos'>
       <h1>Meus Projetos</h1>
       <section className='projects-area'>
-        <Cards link="https://github.com/" />
+        <Cards 
+          title='' 
+          info=''
+          tech=''
+          link=''
+          img='' 
+        />
+        <Cards 
+          title='' 
+          info=''
+          tech=''
+          link=''
+          img='' 
+        />
+        <Cards 
+          title='' 
+          info=''
+          tech=''
+          link=''
+          img='' 
+        />
       </section>
       
     </main> 
