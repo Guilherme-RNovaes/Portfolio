@@ -4,14 +4,18 @@ import Button from "../Button"
 import "./styles.css"
 
 function Cards({ title, info, tech, link, img }) {
+  let typeCard = ''
   if (img === '' || title === ''|| info === '' || tech === '' || link === '') {
-    return(
-      <h3 className="no-img">Em desenvolvimento...</h3>
-    )
+      typeCard = 'no-img'
+      return (
+        <h3 className={typeCard}>Em desenvolvimento...</h3>
+      )
+  } else {
+    typeCard = 'card'
   }
 
   return (
-    <div className="card">
+    <div className={typeCard}>
         <div className="card-image">
             <img src={img} alt="Imagem do projeto" />
             <div className="card-details">
