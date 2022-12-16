@@ -10,11 +10,6 @@ function Projects() {
       <h1>Meus Projetos</h1>
       <section className='projects-area'>
         <Cards 
-          // title='' 
-          // info=''
-          // tech=''
-          // link=''
-          // img='' 
           title='Task List' 
           info='Lista de tarefas feita em ReactJs'
           tech='ReactJs - Javascript - HTML - CSS - Axios'
