@@ -19,14 +19,14 @@ function Cards({ title, info, tech, link, img }) {
         <div className="card-image">
             <img src={img} alt="Imagem do projeto" />
             <div className="card-details">
-                <h2>{title}</h2>
+                <div className="card-more-details">
+                  <h2>{title}</h2>
+                  <a href={link}>
+                    <Button content='Visitar' sty='3' /> 
+                  </a>
+                </div>
                 <p>{info}</p>
                 <p>{tech}</p>
-                <div className="card-more-details">
-                    <a href={link}>
-                        <Button content='Visitar' sty='3' /> 
-                    </a>
-                </div>
             </div>
         </div>
     </div>
