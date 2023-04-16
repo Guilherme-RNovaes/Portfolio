@@ -34,23 +34,11 @@ header h1 {
     justify-content: space-between;
 }
 
-.header-infos, .header-hamburguer-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding-right: 35px;
-    letter-spacing: 2.5px;
-    transition: all ease 0.2s;
-}
-
 .header-infos a {
     color: var(--text-color);
     text-decoration: none;
     padding-right: 35px;
     letter-spacing: 2.5px;
-}
-
-.header-infos, .header-hamburguer a:hover {
-    color: var(--first-color);
 }
 
 .scrolled {
@@ -82,26 +70,6 @@ header::after {
     left: 0;
     transition: 0.5s ease-in-out;
 }
-
-.header-hamburguer-links,
-.header-hamburguer {
-    display: none;
-}
-
-.hamburguer-1, .hamburguer-2, .hamburguer-3 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-    width: 30px;
-    height: 2px;
-    background-color: var(--first-color);
-
-}
-
-.header-hamburguer:hover  {
-    cursor: pointer;
-}
-
 
 @media screen and (max-width: 890px) {
     .header-infos {
