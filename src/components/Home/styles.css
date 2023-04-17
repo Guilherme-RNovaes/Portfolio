@@ -60,14 +60,14 @@
 
     .main-button-area {
         flex-direction: column;
-        margin: 10vh auto 0 auto;
+        margin: 5vh auto 0 auto;
     }
 
     .main-info h1 {
-        font-size: 18pt;
+        font-size: 24pt;
     }
 
     .main-info h2 {
-        font-size: 18pt;
+        font-size: 16pt;
     }
 }
