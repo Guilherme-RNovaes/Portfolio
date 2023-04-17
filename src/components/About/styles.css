@@ -26,15 +26,11 @@
 
 .about-info {
     width: 40vw;
-}
-
-.about-info {
     min-width: 600px;
 }
 
 .about-info p{
     padding-bottom: 15px;
-    
 }
 
 .skills-title {
@@ -53,4 +49,11 @@
     flex-direction: column;
     align-items: center;
     margin: 0 40px;
+}
+
+@media screen and (max-width: 786px) {
+    .about-info {
+        min-width: 80vw;
+        text-align: justify;
+    }
 }
