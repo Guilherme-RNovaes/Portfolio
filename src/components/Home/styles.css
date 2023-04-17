@@ -1,7 +1,7 @@
 .main-container {
-    padding-top: 30vh;
     display: flex;
     justify-content: space-between;
+    padding: 30vh 10vw 0 10vw;
 }
 
 .main-info {
@@ -48,13 +48,26 @@
     width: 100%;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 786px) {
     .main-img {
         display: none;
     }
 
     .main-info {
+        margin-top: -15vh;
         width: 80vw;
     }
 
+    .main-button-area {
+        flex-direction: column;
+        margin: 10vh auto 0 auto;
+    }
+
+    .main-info h1 {
+        font-size: 18pt;
+    }
+
+    .main-info h2 {
+        font-size: 18pt;
+    }
 }

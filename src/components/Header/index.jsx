@@ -11,6 +11,10 @@ function Header() {
     { id: 4, urlName: 'Contato', url: '#contato'}
   ]
 
+  // const HamburguerList = [
+  //   { id: 1}
+  // ]
+
   const HeaderLinks = HeaderList.map((props) => 
     <div className="header-infos" key={props.id}>
       <a href={props.url}>{props.urlName}</a>
@@ -27,7 +31,7 @@ function Header() {
   return (
     <header className={isScrolled ? 'scrolled' : 'header-container'}>
         <a href="#home"><h1>GN</h1></a>
-        <div className='header-infos'>
+        <div className='header'>
           {HeaderLinks}
         </div>
     </header>

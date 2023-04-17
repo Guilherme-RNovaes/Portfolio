@@ -7,7 +7,6 @@ header {
     min-height: 50px;
     position: fixed;
     width: 100vw;
-    margin: 0 -10vw;
     padding: 0 10vw;
     z-index: 999;
     transition: all 1000ms ease;
@@ -27,14 +26,14 @@ header h1 {
     letter-spacing: -8px;
 }
 
-.header-infos {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-infos a {
+.header a {
     color: var(--text-color);
     text-decoration: none;
     padding-right: 35px;
@@ -44,7 +43,6 @@ header h1 {
 .scrolled {
     display: flex;
     width: 100vw;
-    margin: 0 -10vw;
     padding: 0 10vw;
     backdrop-filter: blur(5px);
     background-color: rgba(46, 52, 64, 0.075);
@@ -71,8 +69,8 @@ header::after {
     transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 890px) {
-    .header-infos {
+@media screen and (max-width: 786px) {
+    .header {
         display: none;
     }
 
@@ -84,9 +82,6 @@ header::after {
     .header-hamburguer-links {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        right: 10px;
-        top: 8vh;
     }
     .header-hamburguer-links {
         padding-top: 15px;

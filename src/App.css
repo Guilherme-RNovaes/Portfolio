@@ -6,19 +6,17 @@
   border: 0;
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  
 }
 
 html {
   scroll-behavior: smooth;
-  
+  overflow-x: hidden;
 }
 
-body {
+  body {
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 0 10vw;
-  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -36,6 +34,11 @@ body {
   background-color: var(--second-color);
 }
 
+@media (max-width: 786px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
 
 /* -------------------- Styles -------------------- */
 
