@@ -13,3 +13,17 @@
     padding: 100px 0;
     width: 100%;
 }
+
+@media screen and (max-width: 786px) {
+    .projects-area {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .projects-area {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
