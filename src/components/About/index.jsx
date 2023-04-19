@@ -9,8 +9,9 @@ function About() {
         <h1 className='about-title'>Sobre Mim</h1>
         <section className='about-container-items'>
             <div className='about-info'>
-                <p>Olá, eu me chamo Guilherme Novaes, tenho 22 anos e estudo desenvolvimento front-end a 1 ano, desenvolvendo projetos particulares e estudando de forma autodidata.</p>
-                <p>No momento estou buscando oportunidades de emprego na área, aceito qualquer tipo de desafio e oportunidades. No momento tenho interesse em front-end com ReactJs, tecnologia a qual estou preferindo utilizar em meus atuais projetos por conta de sua facilidade e praticidade no uso de componentes para construção de uma página web.</p>
+                <p>Olá, eu me chamo Guilherme Rogério Novaes, tenho 22 anos e estudo desenvolvimento front-end a 2 anos, desenvolvendo projetos particulares e estudando de forma autodidata.</p>
+                <p>No momento estou buscando oportunidades de emprego na área, aceito qualquer tipo de desafio e oportunidades.</p> 
+                <p>Atualmente sou desenvolvedor front-end e desenvolvo em ReactJs, tecnologia a qual estou preferindo utilizar em meus atuais projetos por conta de sua facilidade e praticidade no uso de componentes para construção de uma página web.</p>
             </div>
         </section>
         <h1 className='skills-title'>Minhas Skills</h1>
