@@ -5,7 +5,7 @@ import './styles.css'
 function Qualification() {
   return (
     <section className="qualification-container">
-        <h1 className="qualification-title">Qualificação</h1>
+        <h1 className="qualification-title">Qualificações</h1>
         <div className="qualification-tabs">
             <div className="qualification-tab">
                 <IoIosSchool size={25} />
