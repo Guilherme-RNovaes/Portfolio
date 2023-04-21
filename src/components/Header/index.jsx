@@ -7,7 +7,7 @@ function Header() {
   const HeaderList = [
     { id: 1, urlName: 'Home', url:'#home' },
     { id: 2, urlName: 'Sobre mim', url: '#sobre'},
-    { id: 3, urlName: 'Projetos', url: '#projetos'},
+    // { id: 3, urlName: 'Projetos', url: '#projetos'},
     { id: 4, urlName: 'Contato', url: '#contato'}
   ]
 
