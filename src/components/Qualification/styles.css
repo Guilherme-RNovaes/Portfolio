@@ -1,0 +1,44 @@
+.qualification-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.qualification-tabs {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.qualification-tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--second-color);
+    gap: 5px;
+    transition: all ease .5s;
+}
+
+.qualification-tab h2 {
+    transition: all ease .5s;
+}
+
+.qualification-tab h2:hover {
+    color: var(--first-color);
+}
+
+.qualification-tab:hover {
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 786px) {
+    .qualification-tabs {
+        justify-content: space-between;
+        width: 80vw;
+        font-size: 12px;
+    }
+}

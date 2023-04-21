@@ -5,6 +5,7 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 
 import './App.css'
+import Qualification from "./components/Qualification"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Qualification />
       {/* <Projects /> */}
       <Footer />
     </div>
