@@ -35,10 +35,57 @@
     color: var(--first-color);
 }
 
+.qualification-area {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.qualifications {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+}
+
+.qualification-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.toogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--first-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1px;
+    background-color: var(--text-color);
+    width: 1px;
+    height: 80px;
+}
+
 @media screen and (max-width: 786px) {
     .qualification-tabs {
         justify-content: space-between;
         width: 80vw;
         font-size: 12px;
     }
+
+    
 }

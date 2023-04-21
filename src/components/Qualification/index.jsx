@@ -16,6 +16,31 @@ function Qualification() {
                 <h2>Experiência</h2>
             </div>
         </div>
+        <div className="qualification-area">
+            <div className="qualifications">
+                <div className="qualification-items">
+                    <h3>Análise e Dev de sistemas</h3>
+                    <p>Anhanguera</p>
+                    <p>2023 - Atual</p>
+                </div>
+                <div className="qualification-timeline">
+                    <div className="toogle">.</div>
+                    <div className="line">.</div>
+                </div>
+            </div>
+            <div className="qualifications">
+                <div className="qualification-timeline">
+                    <div className="toogle">.</div>
+                    <div className="line">.</div>
+                </div>
+                <div className="qualification-items">
+                    <h3>Análise e Dev de sistemas</h3>
+                    <p>Anhanguera</p>
+                    <p>2023 - Atual</p>
+                </div>
+            </div>
+            
+        </div>
     </section>
   )
 }
