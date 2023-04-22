@@ -37,7 +37,7 @@
 
 .qualification-area {
     margin-top: 50px;
-    width: 400px;
+    width: 30vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -99,6 +99,9 @@
         font-size: 12px;
     }
     
-
+    .qualification-area {
+        width: 100vw;
+        justify-content: space-evenly;
+    }
     
 }
