@@ -17,26 +17,46 @@ function Qualification() {
             </div>
         </div>
         <div className="qualification-area">
-            <div className="qualifications">
+            <div className="qualifications left">
                 <div className="qualification-items">
                     <h3>Análise e Dev de sistemas</h3>
                     <p>Anhanguera</p>
                     <p>2023 - Atual</p>
                 </div>
-                <div className="qualification-timeline">
-                    <div className="toogle">.</div>
-                    <div className="line">.</div>
+                <div className="qualification-items">
+                    <h3>Técnico em Administração</h3>
+                    <p>Etec</p>
+                    <p>2016 - 2018</p>
                 </div>
             </div>
-            <div className="qualifications">
+            <div className='qualification-data'>
                 <div className="qualification-timeline">
-                    <div className="toogle">.</div>
-                    <div className="line">.</div>
+                    <div className="toogle"></div>
+                    <div className="line"></div>
+                </div>
+                <div className="qualification-timeline">
+                    <div className="toogle"></div>
+                    <div className="line"></div>
+                </div>
+                <div className="qualification-timeline">
+                    <div className="toogle"></div>
+                    <div className="line"></div>
+                </div>
+                <div className="qualification-timeline">
+                    <div className="toogle"></div>
+                    <div className="line"></div>
+                </div>
+            </div>
+            <div className="qualifications right">
+                <div className="qualification-items">
+                    <h3>Arquitetura e Urbanismo</h3>
+                    <p>Unip</p>
+                    <p>2019 - 2022</p>
                 </div>
                 <div className="qualification-items">
-                    <h3>Análise e Dev de sistemas</h3>
-                    <p>Anhanguera</p>
-                    <p>2023 - Atual</p>
+                    <h3>Ensino médio</h3>
+                    <p>Etec</p>
+                    <p>2016 - 2018</p>
                 </div>
             </div>
             
