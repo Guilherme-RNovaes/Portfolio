@@ -96,7 +96,7 @@ function Qualification() {
         >
             <div className="qualifications left">
                 <div className="qualification-items">
-                    <h3>Atendente Telemarketing Receptivo</h3>
+                    <h3>Atendente Telemarketing</h3>
                     <p>CPFL Atende</p>
                     <p>2022 - Atual</p>
                 </div>
