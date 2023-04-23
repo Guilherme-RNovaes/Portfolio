@@ -14,17 +14,31 @@
     margin-top: 10vh;
 }
 
-.qualification-tab {
+.qualification-tab-active{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--first-color);
+    border-bottom: 2px solid var(--first-color);
+    gap: 5px;
+    transition: all ease .2s;
+}
+
+.qualification-tab-active h2 {
+    color: var(--first-color);
+}
+
+.qualification-tab{
     display: flex;
     align-items: center;
     cursor: pointer;
     color: var(--second-color);
     gap: 5px;
-    transition: all ease .5s;
+    transition: all ease .3s;
 }
 
 .qualification-tab h2 {
-    transition: all ease .5s;
+    transition: all ease .3s;
 }
 
 .qualification-tab h2:hover {
@@ -36,6 +50,10 @@
 }
 
 .qualification-area {
+    display: none;
+}
+
+.qualification-area-active{
     margin-top: 50px;
     width: 30vw;
     display: flex;
