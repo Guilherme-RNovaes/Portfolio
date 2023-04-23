@@ -134,7 +134,11 @@
     
     .qualification-area-active {
         width: 100vw;
-        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+
+    .qualification-items {
+        margin-left: 15px;
     }
     
 }
