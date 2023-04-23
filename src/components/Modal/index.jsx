@@ -4,11 +4,11 @@ import './styles.css'
 function Modal({ close, title, period, obs
  }) {
 
-  const [toogleState, setToogleState] = useState(1);
+  // const [toogleState, setToogleState] = useState(1);
   
-  const toogleTab = (index) => {
-    setToogleState(index)
-  }
+  // const toogleTab = (index) => {
+  //   setToogleState(index)
+  // }
 
   return (
     <div className='modal-container'>
