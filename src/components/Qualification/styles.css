@@ -64,12 +64,23 @@
 .qualifications {
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 170px;
     gap: 10px;
 }
 
 .qualification-items {
-    padding-bottom: 77px;
+    margin-bottom: 77px;
+}
+
+.qualification-content {
+    cursor: pointer;
+    padding: 5px;
+    transition: all ease .2s;
+}
+
+.qualification-content:hover {
+    background-color: var(--rgba-color);
+    border-radius: 5px;
 }
 
 .right {
@@ -109,6 +120,10 @@
     font-size: 1px;
     background-color: var(--text-color);
 }
+
+/* .more-info {
+    display: none;
+} */
 
 @media screen and (max-width: 786px) {
     .qualification-tabs {

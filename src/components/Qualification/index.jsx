@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { IoIosSchool, IoMdCode } from "react-icons/io";
 import './styles.css'
+import Modal from '../Modal';
 
 function Qualification() {
   const [toogleState, setToogleState] = useState(1);
@@ -122,9 +123,22 @@ function Qualification() {
             </div>
             <div className="qualifications right">
                 <div className="qualification-items">
-                    <h3>Analista de Suporte Técnico</h3>
-                    <p>MEI - Primax Online</p>
-                    <p>2019 - 2022</p>
+                    <div 
+                        className="qualification-content"
+                        onClick={() => toogleTab(3)}
+                    >
+                        <h3>Analista de Suporte Técnico</h3>
+                        <p>MEI - Primax Online</p>
+                        <p>2019 - 2022</p>
+                    </div>
+                    <div className='more-info'>
+                        <Modal
+                            close='X'
+                            title='Analista de Suporte Técnico'
+                            period='2019 - 2022'
+                            obs='Trabalhei durant'
+                        />
+                    </div>
                 </div>
                 {/* <div className="qualification-items">
                     <h3>Ensino médio</h3>
