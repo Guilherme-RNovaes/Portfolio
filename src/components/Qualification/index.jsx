@@ -116,7 +116,12 @@ function Qualification() {
                         <p>CPFL Atende</p>
                         <p>2022 - Atual</p>
                     </div>
-                    <div className={modalState === 2 ? 'modal-active' : 'modal'}>
+                    <div className={
+                            modalState === 2 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
                         <Modal
                             event={handleClick}
                             close='X'
@@ -135,7 +140,12 @@ function Qualification() {
                         <p>MEI - Welmax Construtora</p>
                         <p>2019 - 2022</p>
                     </div>
-                    <div className={modalState === 3 ? 'modal-active' : 'modal'}>
+                    <div className={
+                            modalState === 3 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
                         <Modal
                             event={handleClick}
                             close='X'
@@ -170,7 +180,12 @@ function Qualification() {
                         <p>MEI - Primax Online</p>
                         <p>2019 - 2022</p>
                     </div>  
-                    <div className={modalState === 4 ? 'modal-active' : 'modal'}>
+                    <div className={
+                            modalState === 4 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
                         <Modal
                             event={handleClick}
                             close='X'
