@@ -1,23 +1,11 @@
-import React from 'react'
 import './styles.css'
 
-function Modal({ close, title, period, obs
- }) {
-
-  // const [toogleState, setToogleState] = useState(1);
-  
-  // const toogleTab = (index) => {
-  //   setToogleState(index)
-  // }
-
+function Modal({ close, title, period, obs, event}) {
   return (
     <div className='modal-container'>
         <div className='modal-content'>
-          <div 
-            className="modal-close"
-            
-          >
-            X
+          <div className='modal-close' onClick={event}>
+            {close}
           </div>
           <div className='modal-header'>
             <h2>{title}</h2>

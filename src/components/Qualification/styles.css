@@ -121,9 +121,23 @@
     background-color: var(--text-color);
 }
 
-/* .more-info {
+.modal {
     display: none;
-} */
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal-active {
+    visibility: visible;
+}
 
 @media screen and (max-width: 786px) {
     .qualification-tabs {

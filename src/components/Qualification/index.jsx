@@ -11,6 +11,17 @@ function Qualification() {
     setToogleState(index)
   }
 
+  const [modalState, setModalState] = useState(1);
+
+  const modalTab = (index) => {
+    setModalState(index)
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    modalTab(1)
+  }
+
   return (
     <section className="qualification-container">
         <h1 className="qualification-title">Qualificações</h1>
@@ -97,14 +108,42 @@ function Qualification() {
         >
             <div className="qualifications left">
                 <div className="qualification-items">
-                    <h3>Atendente Telemarketing</h3>
-                    <p>CPFL Atende</p>
-                    <p>2022 - Atual</p>
+                    <div 
+                        className="qualification-content"
+                        onClick={() => modalTab(2)}
+                    >
+                        <h3>Atendente Telemarketing</h3>
+                        <p>CPFL Atende</p>
+                        <p>2022 - Atual</p>
+                    </div>
+                    <div className={modalState === 2 ? 'modal-active' : 'modal'}>
+                        <Modal
+                            event={handleClick}
+                            close='X'
+                            title='Atendente Telemarketing Receptivo'
+                            period='2022 - Atual'
+                            obs='Trabalhei durant'
+                        />
+                    </div>
                 </div>
                 <div className="qualification-items">
-                    <h3>Auxiliar Administrativo</h3>
-                    <p>MEI - Welmax Construtora</p>
-                    <p>2019 - 2022</p>
+                    <div 
+                        className="qualification-content"
+                        onClick={() => modalTab(3)}
+                    >
+                        <h3>Auxiliar Administrativo</h3>
+                        <p>MEI - Welmax Construtora</p>
+                        <p>2019 - 2022</p>
+                    </div>
+                    <div className={modalState === 3 ? 'modal-active' : 'modal'}>
+                        <Modal
+                            event={handleClick}
+                            close='X'
+                            title='Auxiliar Administrativo'
+                            period='2019 - 2022'
+                            obs='Trabalhei durant'
+                        />
+                    </div>
                 </div>
             </div>
             <div className='qualification-data'>
@@ -125,14 +164,15 @@ function Qualification() {
                 <div className="qualification-items">
                     <div 
                         className="qualification-content"
-                        onClick={() => toogleTab(3)}
+                        onClick={() => modalTab(4)}
                     >
                         <h3>Analista de Suporte Técnico</h3>
                         <p>MEI - Primax Online</p>
                         <p>2019 - 2022</p>
-                    </div>
-                    <div className='more-info'>
+                    </div>  
+                    <div className={modalState === 4 ? 'modal-active' : 'modal'}>
                         <Modal
+                            event={handleClick}
                             close='X'
                             title='Analista de Suporte Técnico'
                             period='2019 - 2022'
@@ -140,11 +180,6 @@ function Qualification() {
                         />
                     </div>
                 </div>
-                {/* <div className="qualification-items">
-                    <h3>Ensino médio</h3>
-                    <p>Etec</p>
-                    <p>2016 - 2018</p>
-                </div> */}
             </div>
         </div>
     </section>
