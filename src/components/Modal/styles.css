@@ -18,7 +18,8 @@
 .modal-content {
     width: 500px;
     position: relative;
-    background-color: var(--background-color);
+    backdrop-filter: blur(5px);
+    background-color: rgba(46, 52, 64, 0.15);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
 }
