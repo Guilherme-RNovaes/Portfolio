@@ -1,6 +1,6 @@
 import './styles.css'
 
-function Modal({ close, title, period, obs, event}) {
+function Modal({ close, title, period, text, event, listItem1, listItem2, listItem3, listItem4}) {
   return (
     <div className='modal-container'>
         <div className='modal-content'>
@@ -9,9 +9,21 @@ function Modal({ close, title, period, obs, event}) {
           </div>
           <div className='modal-header'>
             <h2>{title}</h2>
-            <p>{period}</p>
+            <h4>{period}</h4>
           </div>
-          <p>{obs}</p>
+          <section className="modal-content-infos">
+            <div className="modal-text">
+              <p>{text}</p>
+            </div>
+            <div className="modal-list">
+              <ul>
+                <li>{listItem1}</li>
+                <li>{listItem2}</li>
+                <li>{listItem3}</li>
+                <li>{listItem4}</li>
+              </ul>
+            </div>
+          </section>
         </div>
     </div>
   )
