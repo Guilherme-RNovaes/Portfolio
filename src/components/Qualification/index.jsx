@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { IoIosSchool, IoMdCode } from "react-icons/io";
 import './styles.css'
-// import Modal from '../Modal';
+import Modal from '../Modal';
 
 function Qualification() {
   const [toogleState, setToogleState] = useState(1);
@@ -194,11 +194,6 @@ function Qualification() {
                     >
                         <h3>Analista de Suporte Técnico</h3>
                         <p>MEI - Primax Online</p>
-<<<<<<< HEAD
-                        <p>2019 - 2022</p>
-                    </div>
-                    {/* <div className='more-info'>
-=======
                         <h4>2019 - 2022</h4>
                     </div>  
                     <div className={
@@ -207,7 +202,6 @@ function Qualification() {
                             : 'modal'
                         }
                     >
->>>>>>> 1aeac83de8ef511b0cf347ff65c5209ad32e999f
                         <Modal
                             event={handleClick}
                             close='X'
@@ -219,7 +213,7 @@ function Qualification() {
                             listItem3='Cadastro e alteração cadastral'
                             listItem4='Registro de informações e bugs do sistema'
                         />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
