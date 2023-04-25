@@ -21,7 +21,7 @@
     color: var(--first-color);
     border-bottom: 2px solid var(--first-color);
     gap: 5px;
-    transition: all ease .2s;
+    transition: all ease .1s;
 }
 
 .qualification-tab-active h2 {
@@ -41,11 +41,8 @@
     transition: all ease .3s;
 }
 
+.qualification-tab:hover,
 .qualification-tab h2:hover {
-    color: var(--first-color);
-}
-
-.qualification-tab:hover {
     color: var(--first-color);
 }
 
@@ -76,7 +73,7 @@
     cursor: pointer;
     padding: 5px;
     transition: all ease .2s;
-}
+}   
 
 .qualification-content:hover {
     background-color: var(--rgba-color);
@@ -121,9 +118,13 @@
     background-color: var(--text-color);
 }
 
-/* .more-info {
+.modal {
     display: none;
-} */
+}
+
+.modal-active {
+    visibility: visible;
+}
 
 @media screen and (max-width: 786px) {
     .qualification-tabs {

@@ -14,7 +14,7 @@ function About() {
                 <p>Atualmente sou desenvolvedor front-end e desenvolvo em ReactJs. Estou a cada dia me aperfeiçoando mais, mantendo o foco e consistência nos estudos e prática.</p>
             </div>
         </section>
-        <h1 className='skills-title'>Minhas Skills</h1>
+        <h1 className='skills-title' id='skills'>Minhas Skills</h1>
         <section className='skills-container-items'>
             <div className="container-items">
                 <div className="container-item">

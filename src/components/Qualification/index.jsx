@@ -11,8 +11,19 @@ function Qualification() {
     setToogleState(index)
   }
 
+  const [modalState, setModalState] = useState(1);
+
+  const modalTab = (index) => {
+    setModalState(index)
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    modalTab(1)
+  }
+
   return (
-    <section className="qualification-container">
+    <section className="qualification-container" id='qualificacao'>
         <h1 className="qualification-title">Qualificações</h1>
         <div className="qualification-tabs">
             <div 
@@ -47,14 +58,18 @@ function Qualification() {
         >
             <div className="qualifications left">
                 <div className="qualification-items">
-                    <h3>Análise e Dev de sistemas</h3>
-                    <p>Anhanguera</p>
-                    <p>2023 - Atual</p>
+                    <div className="qualification-content">
+                        <h3>Análise e Dev de sistemas</h3>
+                        <p>Anhanguera</p>
+                        <h4>2023 - Atual</h4>
+                    </div>
                 </div>
                 <div className="qualification-items">
-                    <h3>Técnico em Administração</h3>
-                    <p>Etec</p>
-                    <p>2016 - 2018</p>
+                    <div className="qualification-content">
+                        <h3>Técnico em Administração</h3>
+                        <p>Etec</p>
+                        <h4>2016 - 2018</h4>
+                    </div>
                 </div>
             </div>
             <div className='qualification-data'>
@@ -77,14 +92,18 @@ function Qualification() {
             </div>
             <div className="qualifications right">
                 <div className="qualification-items">
-                    <h3>Arquitetura e Urbanismo</h3>
-                    <p>Unip</p>
-                    <p>2019 - 2022</p>
+                    <div className="qualification-content">
+                        <h3>Arquitetura e Urbanismo</h3>
+                        <p>Unip</p>
+                        <h4>2019 - 2022</h4>
+                    </div>
                 </div>
                 <div className="qualification-items">
-                    <h3>Ensino médio</h3>
-                    <p>Etec</p>
-                    <p>2016 - 2018</p>
+                    <div className="qualification-content">
+                        <h3>Ensino médio</h3>
+                        <p>Etec</p>
+                        <h4>2016 - 2018</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,14 +116,60 @@ function Qualification() {
         >
             <div className="qualifications left">
                 <div className="qualification-items">
-                    <h3>Atendente Telemarketing</h3>
-                    <p>CPFL Atende</p>
-                    <p>2022 - Atual</p>
+                    <div 
+                        className="qualification-content"
+                        onClick={() => modalTab(2)}
+                    >
+                        <h3>Atendente Telemarketing</h3>
+                        <p>CPFL Atende</p>
+                        <h4>2022 - Atual</h4>
+                    </div>
+                    <div className={
+                            modalState === 2 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
+                        <Modal
+                            event={handleClick}
+                            close='X'
+                            title='Atendente Telemarketing Receptivo'
+                            period='2022 - Atual'
+                            text='Trabalho a pouco mais de 1 ano na empresa CPFL Atende como Atendente de Telemarketing Receptivo, executando funções como:'
+                            listItem1='Suporte ao cliente no call center'
+                            listItem2='Registro de informações e serviços no sistema'
+                            listItem3='Resolução de problemas'
+                            listItem4='Cadastro e alteração cadastral'
+                        />
+                    </div>
                 </div>
                 <div className="qualification-items">
-                    <h3>Auxiliar Administrativo</h3>
-                    <p>MEI - Welmax Construtora</p>
-                    <p>2019 - 2022</p>
+                    <div 
+                        className="qualification-content"
+                        onClick={() => modalTab(3)}
+                    >
+                        <h3>Auxiliar Administrativo</h3>
+                        <p>MEI - Welmax Construtora</p>
+                        <h4>2019 - 2022</h4>
+                    </div>
+                    <div className={
+                            modalState === 3 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
+                        <Modal
+                            event={handleClick}
+                            close='X'
+                            title='Auxiliar Administrativo'
+                            period='2019 - 2022'
+                            text='Prestei serviço durante 3 anos para a empresa Welmax Construtora como Auxiliar administrativo, executando funções como:'
+                            listItem1='Emissão e controle das certidões da empresa'
+                            listItem2='Resolução de problemas'
+                            listItem3='Criação de planilhas para controle'
+                            listItem4='Atendimento receptivo ao cliente'
+                        />
+                    </div>
                 </div>
             </div>
             <div className='qualification-data'>
@@ -125,26 +190,37 @@ function Qualification() {
                 <div className="qualification-items">
                     <div 
                         className="qualification-content"
-                        onClick={() => toogleTab(3)}
+                        onClick={() => modalTab(4)}
                     >
                         <h3>Analista de Suporte Técnico</h3>
                         <p>MEI - Primax Online</p>
+<<<<<<< HEAD
                         <p>2019 - 2022</p>
                     </div>
                     {/* <div className='more-info'>
+=======
+                        <h4>2019 - 2022</h4>
+                    </div>  
+                    <div className={
+                            modalState === 4 
+                            ? 'modal-active' 
+                            : 'modal'
+                        }
+                    >
+>>>>>>> 1aeac83de8ef511b0cf347ff65c5209ad32e999f
                         <Modal
+                            event={handleClick}
                             close='X'
                             title='Analista de Suporte Técnico'
                             period='2019 - 2022'
-                            obs='Trabalhei durant'
+                            text='Prestei serviço durante 3 anos para a empresa Primax Online como Analista de Suporte Técnico, executando funções como:'
+                            listItem1='Suporte ao cliente através de chat e telefone'
+                            listItem2='Resolução de problemas'
+                            listItem3='Cadastro e alteração cadastral'
+                            listItem4='Registro de informações e bugs do sistema'
                         />
                     </div> */}
                 </div>
-                {/* <div className="qualification-items">
-                    <h3>Ensino médio</h3>
-                    <p>Etec</p>
-                    <p>2016 - 2018</p>
-                </div> */}
             </div>
         </div>
     </section>
