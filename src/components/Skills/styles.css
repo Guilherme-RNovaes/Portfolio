@@ -1,0 +1,40 @@
+.skills-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 65px;
+}
+
+.skills-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10vh;
+    width: 60vw;
+}
+
+.skills-tab-active,
+.skills-tab-active h2 {
+    display: flex;
+    color: var(--first-color);
+    border-bottom: 1px solid var(--first-color);
+    gap: 5px;
+    transition: all ease .3s;
+}
+
+.skills-tabs h2 {
+    transition: all ease .3s;
+}
+
+.skills-tabs h2:hover {
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 768px) {
+    .skills-tabs {  
+        width: 90vw;
+        font-size: 12px;
+    }
+}
