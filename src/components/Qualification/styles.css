@@ -66,7 +66,7 @@
 }
 
 .qualification-items {
-    margin-bottom: 77px;
+    margin-bottom: 70px;
 }
 
 .qualification-content {
@@ -81,7 +81,7 @@
 }
 
 .right {
-    margin-top: 87px;
+    margin-top: 83px;
     animation: sobeSecao .8s;
 }
 
@@ -113,6 +113,12 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
+    transition: all ease .1s;
+}
+
+.toogle:hover {
+    border: 2px solid var(--first-color);
+    background-color: var(--background-color);
 }
 
 .line {
