@@ -92,14 +92,14 @@ function Qualification() {
             </div>
             <div className="qualifications right">
                 <div className="qualification-items">
-                    <div className="qualification-content">
+                    <div className="qualification-content up-one">
                         <h3>Arquitetura e Urbanismo</h3>
                         <p>Unip</p>
                         <h4>2019 - 2022</h4>
                     </div>
                 </div>
                 <div className="qualification-items">
-                    <div className="qualification-content">
+                    <div className="qualification-content up-two">
                         <h3>Ensino médio</h3>
                         <p>Etec</p>
                         <h4>2016 - 2018</h4>

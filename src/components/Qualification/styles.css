@@ -82,6 +82,11 @@
 
 .right {
     margin-top: 87px;
+    animation: sobeSecao .8s;
+}
+
+.left {
+    animation: sobeSecao .5s;
 }
 
 .qualification-data {
@@ -124,7 +129,35 @@
 
 .modal-active {
     visibility: visible;
+    animation: opacidade .2s;
 }
+
+/* ---------- Keyframes ---------- */
+
+@keyframes sobeSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacidade {
+    from {
+        transition: .5s;
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ---------- MediaScreen ---------- */
 
 @media screen and (max-width: 786px) {
     .qualification-tabs {

@@ -32,6 +32,10 @@
     color: var(--first-color);
 }
 
+.skills-content {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .skills-tabs {  
         width: 90vw;

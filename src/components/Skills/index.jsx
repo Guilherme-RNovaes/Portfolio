@@ -45,6 +45,43 @@ function Skills() {
                 <h2>Pessoais</h2>
             </div>
         </section>
+        <section className="skills">
+            <div 
+                className={
+                    toogleState === 1
+                    ? 'skills-content-active'
+                    : 'skills-content'
+                }
+            >
+                <h1>HTML</h1>
+                <h1>CSS</h1>
+                <h1>JavaScript</h1>
+                <h1>ReactJs</h1>
+            </div>
+            <div 
+                className={
+                    toogleState === 2
+                    ? 'skills-content-active'
+                    : 'skills-content'
+                }
+            >
+                <h1>NodeJs</h1>
+                <h1>MongoDB</h1>
+                <h1>MySql</h1>
+            </div>
+            <div 
+                className={
+                    toogleState === 3
+                    ? 'skills-content-active'
+                    : 'skills-content'
+                }
+            >
+                <h1>HTML</h1>
+                <h1>CSS</h1>
+                <h1>JavaScript</h1>
+                <h1>ReactJs</h1>
+            </div>
+        </section>
     </section>
   )
 }
