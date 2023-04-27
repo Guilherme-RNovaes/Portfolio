@@ -14,12 +14,6 @@ header {
 
 header a {
     text-decoration: none;
-    transition: all ease 300ms;
-}
-
-header a:hover {
-    color: var(--first-color);
-    transition: all ease 300ms;
 }
 
 header h1 {
@@ -33,11 +27,24 @@ header h1 {
     justify-content: space-between;
 }
 
-.header a {
+.header-link:hover {
+    color: var(--first-color);
+}
+
+.header-link,
+.header-link-active {
     color: var(--text-color);
     text-decoration: none;
-    padding-right: 35px;
+    margin-right: 35px;
     letter-spacing: 2.5px;
+    transition: all ease 300ms;
+}
+
+.header-link-active {
+    color: var(--background-color);
+    background-color: var(--second-color);
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .scrolled {

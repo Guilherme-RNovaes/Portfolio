@@ -17,15 +17,23 @@ function Header() {
   //   { id: 1}
   // ]
 
+  const [activeLink, setActiveLink] = useState('#home')
+
   const HeaderLinks = HeaderList.map((props) => 
     <div className="header-infos" key={props.id}>
-      <a href={props.url}>{props.urlName}</a>
+      <a 
+        href={props.url} 
+        onClick={() => setActiveLink(props.url)} 
+        className={activeLink === props.url ? 'header-link-active' : 'header-link'}
+      >
+        {props.urlName}
+      </a>
     </div>
   )
 
   const[isScrolled, setIsScrolled] = useState(false);
 
-  window.onscroll = () => {
+  window.onscroll = () => { 
     setIsScrolled(window.pageYOffset === 0 ? false : true)
     return () => (window.onscroll = null)
   }
