@@ -4,6 +4,7 @@
     width: 100%;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 10vh;
     padding-top: 65px;
 }
 
@@ -31,28 +32,6 @@
 
 .about-info p{
     padding-bottom: 15px;
-}
-
-.skills-title {
-    margin: 100px 0;
-}
-
-.skills-container-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-items {
-    display: flex;
-}
-
-.container-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 40px;
 }
 
 @media screen and (max-width: 786px) {

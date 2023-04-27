@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100%;
     padding-top: 65px;
+    margin-bottom: 10vh;
 }
 
 .skills-tabs {
@@ -36,9 +37,72 @@
     display: none;
 }
 
+.skills-content-active {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-star;
+    gap: 10px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 50px;
+    animation: sobeSecao .5s;
+}
+
+.skill-list i {
+    display: flex;
+    align-items: center;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ---------- Keyframes ---------- */
+
+@keyframes sobeSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(0, 40px, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes opacidade {
+    from {
+        transition: .5s;
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ---------- MediaScreen ---------- */
+
 @media screen and (max-width: 768px) {
     .skills-tabs {  
         width: 90vw;
         font-size: 12px;
+    }
+
+    .skill-list {
+        padding-left: 10px;
     }
 }

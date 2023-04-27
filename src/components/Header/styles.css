@@ -43,6 +43,7 @@ header h1 {
 .header-link-active {
     color: var(--background-color);
     background-color: var(--second-color);
+    font-weight: 600;
     padding: 5px;
     border-radius: 20px;
 }
