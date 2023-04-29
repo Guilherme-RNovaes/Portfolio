@@ -165,7 +165,7 @@
 }
 
 /* ---------- MediaScreen ---------- */
-
+    
 @media screen and (max-width: 786px) {
     .qualification-tabs {
         justify-content: space-between;
