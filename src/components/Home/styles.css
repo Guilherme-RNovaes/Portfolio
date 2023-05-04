@@ -1,10 +1,14 @@
 .main-container {
     display: flex;
-    justify-content: space-between;
-    padding: 30vh 10vw 0 10vw;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 10vw 0 10vw;
 }
 
 .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     line-height: 3.5rem;
     width: 35vw;
 }
@@ -35,26 +39,26 @@
     justify-content: space-between;
 }
 
-.main-img div {
+.main-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    margin-right: 100px;
+    width: 10rem;
+    margin-bottom: 3rem;
 }
 
 .main-img img {
     height: 100%;
     width: 100%;
+    border-radius: 100%;
 }
 
 @media screen and (max-width: 786px) {
     .main-img {
-        display: none;
+        margin-bottom: 1.5rem;
     }
 
     .main-info {
-        margin-top: -15vh;
         width: 80vw;
     }
 

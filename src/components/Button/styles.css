@@ -1,8 +1,8 @@
 .main-button-1 {
     margin-top: 20px;
-    width: 200px;
-    height: 70px;
-    border-radius: 5px;
+    width: 190px;
+    height: 60px;
+    border-radius: 9999px;
     cursor: pointer;
     background-color: var(--second-color);
     color: var(--background-color);
@@ -21,9 +21,9 @@
 
 .main-button-2 {
     margin-top: 20px;
-    width: 200px;
-    height: 70px;
-    border-radius: 5px;
+    width: 190px;
+    height: 60px;
+    border-radius: 9999px;
     cursor: pointer;
     background-color: transparent;
     color: var(--text-color);

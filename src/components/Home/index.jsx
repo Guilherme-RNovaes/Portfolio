@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect';
 import Button from '../Button';
 
-import Perfil from '../../img/Profile-Picture.svg'
+// import Perfil from '../../img/Profile-Picture.svg'
 import './styles.css'
 
 const Cv = "https://www.canva.com/design/DAFPb_DdYns/view"
@@ -10,6 +10,9 @@ function Home() {
   return (
     <main className='main-container' id='home'>
         <section className="main-info">
+            <div className='main-img'>
+                <img src='https://github.com/Guilherme-RNovaes.png' alt="foto de perfil" />
+            </div> 
             <p className='main-hello'>Olá, eu sou</p>
             <h1><span>Guilherme Novaes</span></h1>
             <h2>
@@ -33,11 +36,11 @@ function Home() {
                 </a>
             </div>
         </section>
-        <section className="main-img">
-            <div>
-                <img src={Perfil} alt="foto de perfil" />
+        {/* <section className="main-img">
+            <div className='main-img'>
+                <img src='https://github.com/Guilherme-RNovaes.png' alt="foto de perfil" />
             </div> 
-        </section>
+        </section> */}
     </main>
   )
 }
