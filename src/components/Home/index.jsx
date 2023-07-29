@@ -19,8 +19,9 @@ function Home() {
                 <Typewriter
                     options={{
                         strings: [
-                            '<span style="color: var(--text-color);">Desenvolvedor</span> Front-end jr', 
-                            '<span style="color: var(--text-color);">Desenvolvedor</span> React jr'],
+                            '<span style="color: var(--text-color);">Desenvolvedor</span> Full Stack',
+                            '<span style="color: var(--text-color);">Desenvolvedor</span> React',
+                        ],
                         autoStart: true,
                         loop: true,
                     }}
