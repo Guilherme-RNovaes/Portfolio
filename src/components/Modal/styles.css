@@ -19,7 +19,7 @@
 .modal-content {
     width: 500px;
     position: relative;
-    background-color: rgb(46, 52, 64);
+    background-color: var(--background-color);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
 }

@@ -7,7 +7,7 @@ function ScrollUp() {
     const scrollUp = document.querySelector('.scroll-up');
     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
     else scrollUp.classList.remove('show-scroll')
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         scrollUp.classList.add('max-scroll');
     }
     else scrollUp.classList.remove('max-scroll')
