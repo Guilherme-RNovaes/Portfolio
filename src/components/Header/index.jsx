@@ -22,7 +22,7 @@ function Header() {
     };
   }, []);
 
-  const [toogleState, setToogleState] = useState(1);
+  const [toogleState, setToogleState] = useState(0);
 
   const toogleTab = (index) => {
     setToogleState(index)
@@ -54,28 +54,34 @@ function Header() {
   const[isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => { 
-    setIsScrolled(window.pageYOffset === 0 ? false : true)
+    setIsScrolled(window.scrollY === 0 ? false : true)
     return () => (window.onscroll = null)
   }
 
   return (
+    <>
     <header className={isScrolled ? 'scrolled' : 'header-container'}>
         <a href="#home"><h1>GN</h1></a>
-        <div className={isSmallScreen ? 'hamburguer' : 'header'}>
-          <div id={toogleState === 2 ? 'hamburguer-active' : 'hamburguer-inactive'}>
-            <button onClick={() => toogleTab(1)}>
-              <GrClose />
-            </button>
-          </div>
+        <div className={isSmallScreen ? 'mobile' : 'desktop'}>
           {HeaderLinks}
         </div>
-
         <div className={isSmallScreen ? 'show-hamburguer' : 'no-hamburguer'}>
-          <button onClick={() => toogleTab(2)}>
+          <button onClick={() => toogleTab(1) && toogleState(1)}>
             <GiHamburgerMenu />
           </button>
         </div>
     </header>
+
+        <div className={isSmallScreen && toogleTab === 1 ? 'hamburguer' : 'header'}>
+          <div id={toogleState === 1 ? 'hamburguer-active' : 'hamburguer-inactive'}>
+            <button onClick={() => toogleTab(0) && toogleState(0)}>
+              <GrClose />
+            </button>
+            {HeaderLinks}
+          </div>
+        </div>
+    </>
+
   )
 }
 

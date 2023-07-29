@@ -77,7 +77,16 @@ header::after {
     transition: 0.5s ease-in-out;
 }
 
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
 .no-hamburguer,
+.hamburguer,
 #hamburguer-inactive {
     display: none;
 }
@@ -86,12 +95,13 @@ header::after {
     display: flex;
 }
 
-.hamburguer button, 
+#hamburguer-active button, 
 .show-hamburguer button {
     background-color: transparent;
+    cursor: pointer;
 }
 
-.hamburguer button svg, 
+#hamburguer-active svg, 
 .show-hamburguer button svg{
     margin-left: -30px;
     border: none;
@@ -103,7 +113,7 @@ header::after {
 
 .hamburguer,
 #hamburguer-active {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     display: flex;
@@ -115,6 +125,7 @@ header::after {
     width: 100vw;
     backdrop-filter: blur(10px);
     background-color: rgba(46, 52, 64, 0.075);
+    z-index: 9999;
 }
 
 @media screen and (max-width: 786px) {
