@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GiHamburgerMenu } from "react-icons/gi"
-import { GrClose } from "react-icons/gr"
-
+import { GiCrossedSwords, GiHamburgerMenu } from "react-icons/gi"
 import './styles.css'
 
 function Header() {
@@ -75,7 +73,7 @@ function Header() {
         <div className={isSmallScreen && toogleTab === 1 ? 'hamburguer' : 'header'}>
           <div id={toogleState === 1 ? 'hamburguer-active' : 'hamburguer-inactive'}>
             <button onClick={() => toogleTab(0) && toogleState(0)}>
-              <GrClose />
+              <GiCrossedSwords/>
             </button>
             {HeaderLinks}
           </div>

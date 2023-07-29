@@ -52,7 +52,7 @@ header h1 {
     display: flex;
     padding: 0 10vw;
     backdrop-filter: blur(5px);
-    background-color: rgba(46, 52, 64, 0.075);
+    background-color: rgba(12, 12, 12, 0.075);
     box-shadow: rgba(0, 0, 0, 0.1) 2px 8px 8px;
     border: none;
     transition: all 600ms ease;
@@ -96,15 +96,16 @@ header::after {
 
 #hamburguer-active button, 
 .show-hamburguer button {
+    color: var(--first-color);
     background-color: transparent;
     cursor: pointer;
 }
 
-#hamburguer-active svg, 
+#hamburguer-active button svg, 
 .show-hamburguer button svg{
     margin-left: -30px;
     border: none;
-    color: var(--first-color);
+    
     padding: 0;
     width: 1.5rem;
     height: 1.5rem;
@@ -123,7 +124,7 @@ header::after {
     height: 100vh;
     width: 100vw;
     backdrop-filter: blur(10px);
-    background-color: rgba(46, 52, 64, 0.075);
+    background-color: rgba(12, 12, 12, .5);
     z-index: 9999;
 }
 
