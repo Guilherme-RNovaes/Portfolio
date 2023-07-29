@@ -43,7 +43,6 @@ header h1 {
 .header-link-active {
     color: var(--background-color);
     background-color: var(--second-color);
-    filter: opacity(.6);
     font-weight: 600;
     padding: 5px 15px;
     border-radius: 20px;
