@@ -58,7 +58,7 @@ function Header() {
 
   return (
     <>
-    <header className={isScrolled ? 'scrolled' : 'header-container'}>
+      <header className={isScrolled ? 'scrolled' : 'header-container'}>
         <a href="#home"><h1>GN</h1></a>
         <div className={isSmallScreen ? 'mobile' : 'desktop'}>
           {HeaderLinks}
@@ -68,16 +68,16 @@ function Header() {
             <GiHamburgerMenu />
           </button>
         </div>
-    </header>
+      </header>
 
-        <div className={isSmallScreen && toogleTab === 1 ? 'hamburguer' : 'header'}>
-          <div id={toogleState === 1 ? 'hamburguer-active' : 'hamburguer-inactive'}>
-            <button onClick={() => toogleTab(0) && toogleState(0)}>
-              <GiCrossedSwords/>
-            </button>
-            {HeaderLinks}
-          </div>
+      <div className={isSmallScreen && toogleTab === 1 ? 'hamburguer' : 'header'}>
+        <div id={toogleState === 1 ? 'hamburguer-active' : 'hamburguer-inactive'}>
+          <button onClick={() => toogleTab(0) && toogleState(0)}>
+            <GiCrossedSwords/>
+          </button>
+          {HeaderLinks}
         </div>
+      </div>
     </>
 
   )
