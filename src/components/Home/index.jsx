@@ -8,6 +8,17 @@ import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineWhatsA
 const Cv = "https://www.canva.com/design/DAFPb_DdYns/view"
 
 function Home() {
+  const ContactList = [
+    { id: 1, ico: <AiOutlineGithub size={25} />, url: 'https://github.com/Guilherme-RNovaes' },
+    { id: 2, ico: <AiOutlineLinkedin size={25} />, url: 'https://www.linkedin.com/in/guilherme-r-novaes/'},
+    { id: 3, ico: <AiOutlineInstagram size={25} />, url: 'https://www.instagram.com/gr.novaes/'},
+    { id: 4, ico: <AiOutlineWhatsApp size={25} />, url: 'https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!'},
+  ]
+
+  const ContactLinks = ContactList.map((props) =>
+    <a key={props.id} href={props.url} target="_blank" rel="noreferrer">{props.ico}</a>
+  )
+
   return (
     <main className='main-container' id='home'>
         <section className="main-info">
@@ -30,10 +41,7 @@ function Home() {
             </h2>
             {/* <p>Veja um pouco dos meus projetos.</p> */}
             <div className='contact-area'>
-                <a href="https://github.com/Guilherme-RNovaes" target="_blank" rel="noreferrer"><AiOutlineGithub size={25} /></a>
-                <a href="https://www.linkedin.com/in/guilherme-r-novaes/" target="_blank" rel="noreferrer"><AiOutlineLinkedin size={25} /></a>
-                <a href="https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!https://www.instagram.com/gr.novaes/" target="_blank" rel="noreferrer"><AiOutlineWhatsApp size={25} /></a>
-                <a href="https://www.instagram.com/gr.novaes/" target="_blank" rel="noreferrer"><AiOutlineInstagram size={25} /></a>
+                {ContactLinks}
             </div>
             <div className='main-button-area'>
                 {/* <a href="#projetos">
