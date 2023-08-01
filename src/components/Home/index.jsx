@@ -1,9 +1,9 @@
 import Typewriter from 'typewriter-effect';
 import Button from '../Button';
+import ProfilePicture from '../ProfilePicture';
 
 import './styles.css'
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineWhatsApp } from 'react-icons/ai';
-import ProfilePicture from '../ProfilePicture';
 
 const Cv = "https://www.canva.com/design/DAFPb_DdYns/view"
 
