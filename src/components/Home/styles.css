@@ -32,11 +32,8 @@
 }
 
 .main-button-area {
-    width: 29vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+   margin-top: 5vh; 
+    
 }
 
 .main-img {
