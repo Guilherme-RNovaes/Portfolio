@@ -12,8 +12,8 @@ function Skills() {
     { id: 2, ico: <DiCss3 size={30} />, skillName: 'Css', skillLevel: 'Avançado' },
     { id: 3, ico: <DiBootstrap size={30} />, skillName: 'Bootstrap', skillLevel: 'Iniciante' },
     { id: 4, ico: <SiTailwindcss size={30} />, skillName: 'Tailwind', skillLevel: 'Iniciante' },
-    { id: 5, ico: <DiJavascript size={30} />, skillName: 'Javascript', skillLevel: 'Intermediário' },
-    { id: 6, ico: <DiReact size={30} />, skillName: 'React', skillLevel: 'Intermediário' }
+    { id: 5, ico: <DiJavascript size={30} />, skillName: 'Javascript', skillLevel: 'Avançado' },
+    { id: 6, ico: <DiReact size={30} />, skillName: 'React', skillLevel: 'Avançado' }
 
   ]
 

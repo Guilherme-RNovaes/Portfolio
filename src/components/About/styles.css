@@ -28,6 +28,7 @@
 .about-info {
     width: 40vw;
     min-width: 600px;
+    text-align: justify;
 }
 
 .about-info p{
@@ -37,7 +38,6 @@
 @media screen and (max-width: 786px) {
     .about-info {
         min-width: 80vw;
-        text-align: justify;
     }
 
     .skills-container-items {

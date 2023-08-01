@@ -29,6 +29,7 @@
 
 .main-info span{
     color: var(--first-color);
+    font-family: 'Roboto Mono';
 }
 
 .main-button-area {
@@ -76,7 +77,7 @@
     }
 
     .main-info {
-        width: 80vw;
+        width: 88vw;
     }
 
     .main-button-area {
@@ -85,10 +86,10 @@
     }
 
     .main-info h1 {
-        font-size: 24pt;
+        font-size: 23pt;
     }
 
     .main-info h2 {
-        font-size: 16pt;
+        font-size: 15pt;
     }
 }
