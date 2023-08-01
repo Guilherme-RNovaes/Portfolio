@@ -19,12 +19,12 @@
 
 .main-info h1 {
     color: var(--text-color);
-    font-size: 36pt;
+    font-size: 34pt;
 }
 
 .main-info h2 {
     color: var(--text-color);
-    font-size: 26pt;
+    font-size: 24pt;
 }
 
 .main-info span{
