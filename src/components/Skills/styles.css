@@ -3,8 +3,8 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-top: 65px;
     margin-bottom: 10vh;
+    padding-top: 15px;
 }
 
 .skills-tabs {
@@ -99,10 +99,11 @@
 @media screen and (max-width: 768px) {
     .skills-tabs {  
         width: 90vw;
-        font-size: 12px;
+        font-size: 10pt;
     }
 
     .skill-list {
         padding-left: 10px;
+        font-size: 10pt;
     }
 }
