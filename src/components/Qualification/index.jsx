@@ -1,9 +1,8 @@
 import { useState } from 'react'
 
-import { IoIosSchool, IoMdCode } from "react-icons/io";
+import { IoIosSchool, IoMdClose, IoMdCode } from "react-icons/io";
 import './styles.css'
 import Modal from '../Modal';
-import { GiCrossedSwords } from 'react-icons/gi';
 
 function Qualification() {
   const [toogleState, setToogleState] = useState(1);
@@ -133,7 +132,7 @@ function Qualification() {
                     >
                         <Modal
                             event={handleClick}
-                            close={<GiCrossedSwords />}
+                            close={<IoMdClose />}
                             title='Atendente Telemarketing Receptivo'
                             period='2022 - Atual'
                             text='Trabalho a pouco mais de 1 ano na empresa CPFL Atende como Atendente de Telemarketing Receptivo, executando funções como:'
@@ -161,7 +160,7 @@ function Qualification() {
                     >
                         <Modal
                             event={handleClick}
-                            close={<GiCrossedSwords />}
+                            close={<IoMdClose />}
                             title='Auxiliar Administrativo'
                             period='2019 - 2022'
                             text='Prestei serviço durante 3 anos para a empresa Welmax Construtora como Auxiliar administrativo, executando funções como:'
@@ -205,7 +204,7 @@ function Qualification() {
                     >
                         <Modal
                             event={handleClick}
-                            close={<GiCrossedSwords />}
+                            close={<IoMdClose />}
                             title='Analista de Suporte Técnico'
                             period='2019 - 2022'
                             text='Prestei serviço durante 3 anos para a empresa Primax Online como Analista de Suporte Técnico, executando funções como:'

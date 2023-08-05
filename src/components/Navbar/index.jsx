@@ -45,7 +45,7 @@ function Navbar() {
       <div key={props.id}>
         <a 
           href={props.url}
-          onClick={() => setActiveLink(props.url)} 
+          // onClick={() => setActiveLink(props.url)} 
           className={activeLink === props.url ? 'navbar-link-active' : 'navbar-link'}
         >
           {props.ico}
