@@ -17,7 +17,7 @@ function Projects() {
           img={FirstCard}
         />
         <Cards 
-          title='' 
+          title=''
           info=''
           tech=''
           link=''

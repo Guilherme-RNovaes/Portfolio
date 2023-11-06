@@ -19,7 +19,7 @@ function App() {
       <About />
       <Skills />
       <Qualification />
-      {/* <Projects /> */}
+      /* <Projects /> */
       <ScrollUp />
       <Footer />
     </div>
