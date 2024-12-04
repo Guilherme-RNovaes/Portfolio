@@ -17,9 +17,8 @@ const NavbarIdItems = () => {
       <DropdownMenuContent className="w-40 mr-8 rounded-3xl">
         <DropdownMenuGroup className="flex flex-col gap-2">
           {navigationItem.map((props, index) => (
-            <DropdownMenuItem className="rounded-full" asChild>
+            <DropdownMenuItem key={index} className="rounded-full" asChild>
               <Button
-                key={index}
                 variant='ghost'
                 asChild
                 className="rounded-full flex flex-row justify-center group"
