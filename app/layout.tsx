@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./_components/navbar";
 
 const clashGrotesk = localFont({
   src: [
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${clashGrotesk.variable} font-grotesk antialiased dark`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
