@@ -29,12 +29,15 @@ const Navbar = () => {
       transition={{ duration: 0.7, }}
       className="w-full fixed top-0 flex justify-center pt-2 px-8 items-center z-50"
     >
+      <div className="fixed left-8 md:left-12">
+        <h1 className="font-bold text-xl">GN</h1>
+      </div>
       <div
         className="bg-white/20 rounded-full backdrop-blur-xl p-2 flex items-center shadow-2xl"
       >
         <NavbarPageItems isActiveRoute={isActiveRoute} />
       </div>
-      <div className="fixed top-4 right-8">
+      <div className="fixed right-4 md:right-8">
         <NavbarIdItems />
       </div>
     </motion.nav>

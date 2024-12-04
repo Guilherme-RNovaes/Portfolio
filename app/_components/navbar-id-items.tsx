@@ -11,10 +11,10 @@ const navigationItem = idNavigationProps;
 const NavbarIdItems = () => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger asChild className="rounded-full p-6">
         <Button variant="default"><Menu /></Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-40 mr-8">
+      <DropdownMenuContent className="w-40 mr-8 rounded-3xl">
         <DropdownMenuGroup className="flex flex-col gap-2">
           {navigationItem.map((props, index) => (
             <DropdownMenuItem className="rounded-full" asChild>
@@ -22,7 +22,7 @@ const NavbarIdItems = () => {
                 key={index}
                 variant='ghost'
                 asChild
-                className="w-30 rounded-full flex flex-row justify-center group"
+                className="rounded-full flex flex-row justify-center group"
               >
                 <Link href={props.href} className='flex items-center justify-start'>
                   {props.name}
