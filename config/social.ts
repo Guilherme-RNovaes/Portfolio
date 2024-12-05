@@ -23,7 +23,7 @@ export const socialProps: social[] = [
     link: 'mailto:guilherme00rogerio@gmail.com'
   },
   {
-    name: 'Currúculo',
+    name: 'Currículo',
     link: userProps.curriculum,
   },
 ]
