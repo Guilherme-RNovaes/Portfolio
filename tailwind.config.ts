@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        custom: "10px 10px 20px rgba(0, 0, 0, 0.8)",
+      },
       animation: {
         rotate: "rotate 20s linear infinite",
       },
