@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-zinc-100">
       Hello world
     </div>
   )
