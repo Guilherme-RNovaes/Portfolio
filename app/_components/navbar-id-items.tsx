@@ -11,7 +11,7 @@ const navigationItem = idNavigationProps;
 const NavbarIdItems = () => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className="rounded-full p-6">
+      <DropdownMenuTrigger asChild className="rounded-full p-6 shadow-xl">
         <Button variant="default"><Menu /></Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-40 mr-8 rounded-3xl">

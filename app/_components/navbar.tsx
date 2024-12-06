@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import NavbarItems from "./navbar-page-items";
 import NavbarPageItems from "./navbar-page-items";
 import NavbarIdItems from "./navbar-id-items";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -26,14 +28,16 @@ const Navbar = () => {
         opacity: 1,
         scale: 1
       }}
-      transition={{ duration: 0.7, }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
       className="w-full fixed top-0 flex justify-center pt-2 px-8 items-center z-50"
     >
-      <div className="fixed left-8 md:left-12">
-        <h1 className="font-bold text-xl">GN</h1>
-      </div>
+      <Button asChild variant='default' className="fixed left-8 md:left-12 rounded-full p-6 px-4 shadow-xl">
+        <Link href="/#home">
+          <h1 className="text-black font-semibold text-xl">GN</h1>
+        </Link>
+      </Button>
       <div
-        className="bg-white/20 rounded-full backdrop-blur-xl p-2 flex items-center shadow-2xl"
+        className="bg-black/60 rounded-full backdrop-blur-3xl p-2 flex items-center shadow-xl shadow-black/20"
       >
         <NavbarPageItems isActiveRoute={isActiveRoute} />
       </div>
