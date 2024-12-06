@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const HeroSection = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background">
       <motion.div
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ const HeroSection = () => {
         className="flex flex-col gap-6 items-center"
       >
         <Button variant='default' asChild className="group rounded-full">
-          <Link href='/'>
+          <Link href='/' className="font-semibold text-sm">
             Entre em contato
             <span className="group-hover:translate-x-1 transition-all">
               <ArrowRight />
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </Link>
         </Button>
       </motion.div>
-    </>
+    </div>
   )
 }
 
