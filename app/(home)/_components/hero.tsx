@@ -24,7 +24,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
         className="flex flex-col gap-6 items-center pb-6"
       >
-        <p className="max-w-4xl text-center font-light text-gray-500 text-4xl">{userProps.about}</p>
+        <p className="max-w-4xl text-center font-light text-gray-500 text-4xl">{userProps.hero}</p>
       </motion.div>
       <motion.div
         initial={{ y: 30, opacity: 0 }}

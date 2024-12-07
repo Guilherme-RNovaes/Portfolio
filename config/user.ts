@@ -5,6 +5,7 @@ export interface User {
   cel: string;
   stack: string[];
   languages: string[];
+  hero: string;
   about: string;
   moreAbout: string;
   aboutWork: string;
@@ -37,6 +38,7 @@ const userProps: User =
   cel: '(16)98844-8896',
   stack: ['Javascript', 'Typescript', 'React', 'Nextjs', 'Nodejs', 'Expressjs', 'MySQL', 'MongoDB'],
   languages: ['Inglês', 'Português'],
+  hero: `Desenvolvedor Fullstack com foco em Javascript, Typescript e React. Ajudo empresas a transformar sonhos em códico. Vamos conversar?`,
   about: `Desenvolvedor autônomo, oferecendo serviços de criação de Landing Pages, E-commerces e Páginas Institucionais que combinam funcionalidade, estética e performance.`,
   moreAbout: `Olá! Sou Guilherme Rogério Novaes, desenvolvedor de ${userAge} anos, apaixonado por criar soluções digitais e explorar as infinitas possibilidades do mundo da tecnologia. Com mais de três anos de experiência na programação, especializei-me na área Fullstack, dominando tanto o desenvolvimento front-end quanto o back-end de aplicações web.\nAlém das habilidades técnicas, sou um profissional comprometido com a entrega de resultados de alta qualidade. Tenho uma abordagem detalhista para o desenvolvimento, buscando sempre aprimorar a usabilidade, performance e design das soluções que construo.\nAtualmente, atuo como desenvolvedor autônomo, oferecendo serviços personalizados como criação de Landing Pages, E-commerces e Páginas Institucionais. Meu objetivo é transformar ideias em soluções digitais que gerem valor, contribuindo para o sucesso dos projetos dos meus clientes com ética, responsabilidade e excelência.`,
   aboutWork: 'Atualmente, atuo como desenvolvedor autônomo, aplicando minha experiência adquirida em projetos como o desenvolvimento de uma aplicação para manutenção e registro de ponto de funcionários. Nesse projeto, fui responsável por criar uma interface amigável e funcional, garantindo eficiência e usabilidade para o cliente.',
