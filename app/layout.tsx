@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./_components/navbar";
+import ScrollToTopButton from "./_components/scroll-to-top-button";
 
 const clashGrotesk = localFont({
   src: [
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <ScrollToTopButton />
       </body>
     </html>
   );
