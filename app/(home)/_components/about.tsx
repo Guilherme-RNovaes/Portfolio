@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import SocialButtons from "./social-buttons";
 import { fromLeftAnimation, fromRightAnimation, fromTopAnimation } from "@/config/animations";
 import Image from "next/image";
+import Skills from "./skills";
 
 const About = () => {
   return (
@@ -41,6 +42,7 @@ const About = () => {
           <Image src={userProps.imageUrl} alt="user image" width={600} height={600} className="object-cover rounded-full drop-shadow-custom z-10" />
         </motion.div>
       </div>
+      <Skills />
     </div >
   )
 }
