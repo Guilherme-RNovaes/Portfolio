@@ -26,7 +26,7 @@ const SocialButtons = () => {
               />
               <div className="flex flex-row items-center justify-between relative z-10 text-2xl uppercase font-light">
                 <span>{social.name}</span>
-                <ArrowRight className="group-hover:translate-x-4 transition-all" size={72} />
+                <ArrowRight className="group-hover:translate-x-4 transition-all" />
               </div>
             </motion.div>
           </Link>
