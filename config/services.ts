@@ -1,44 +1,45 @@
+import { Building2, ChartNetwork, DollarSign, Eye, House, LucideIcon, ShoppingBag, Workflow } from "lucide-react";
 
 export interface service {
   name: string;
-  description: string;
+  icon: LucideIcon;
   side: string;
 }
 
 export const services: service[] = [
   {
     name: "Criação de landing page",
-    description: "",
+    icon: House,
     side: "left"
   },
   {
     name: "Criação de site institucional",
-    description: "",
+    icon: Building2,
     side: "right"
   },
   {
     name: "Criação de página de captura",
-    description: "",
+    icon: Eye,
     side: "left"
   },
   {
     name: "Criação de página de vendas",
-    description: "",
+    icon: DollarSign,
     side: "right"
   },
   {
     name: "Criação de E-commerce",
-    description: "",
+    icon: ShoppingBag,
     side: "left"
   },
   {
     name: "Otimização de SEO",
-    description: "",
+    icon: ChartNetwork,
     side: "right"
   },
   {
     name: "Conexão/Consumo de REST API's",
-    description: "",
+    icon: Workflow,
     side: "left"
   },
 ]
