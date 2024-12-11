@@ -6,7 +6,7 @@ import Marquee from "./marquee";
 
 const Skills = () => {
   return (
-    <div className="w-screen flex flex-col items-center pb-10 pt-20 px-36">
+    <div className="w-screen flex flex-col items-center mb-36 pt-20 px-36">
       <motion.header
         variants={fromTopAnimation}
         initial="hidden"
