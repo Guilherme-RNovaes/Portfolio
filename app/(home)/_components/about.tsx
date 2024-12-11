@@ -3,7 +3,7 @@
 import userProps from "@/config/user";
 import { motion } from "motion/react";
 import SocialButtons from "./social-buttons";
-import { fromLeftAnimation, fromRightAnimation, fromTopAnimation } from "@/config/animations";
+import { fromBottomAnimation, fromLeftAnimation, fromRightAnimation } from "@/config/animations";
 import Image from "next/image";
 import Skills from "./skills";
 
@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen flex flex-col items-center bg-background pt-20 px-36">
       <motion.header
-        variants={fromTopAnimation}
+        variants={fromBottomAnimation({ duration: 0.7, delay: 0 })}
         initial="hidden"
         whileInView="visible"
         className="flex items-start w-full mb-12"
@@ -20,7 +20,7 @@ const About = () => {
       </motion.header>
       <div className="flex flex-row items-center justify-between w-full">
         <motion.div
-          variants={fromLeftAnimation}
+          variants={fromLeftAnimation({ duration: 0.7, delay: 0 })}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.7, ease: "easeInOut" }}
@@ -32,7 +32,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          variants={fromRightAnimation}
+          variants={fromRightAnimation({ duration: 0.7, delay: 0 })}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.7, ease: "easeInOut" }}
