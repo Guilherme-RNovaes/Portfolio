@@ -14,19 +14,21 @@ export const fromTopAnimationDelay = {
     transition: { duration: 0.7, delay: 0.3, ease: "easeInOut" },
   }
 }
-export const fromLeftAnimation = {
+
+export const fromLeftAnimation = ({ duration, delay }: { duration: number; delay: number }) => ({
   hidden: { opacity: 0, x: -100 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.7, ease: "easeInOut" },
-  }
-}
-export const fromRightAnimation = {
+    transition: { duration, ease: "easeInOut", delay },
+  },
+});
+
+export const fromRightAnimation = ({ duration, delay }: { duration: number; delay: number }) => ({
   hidden: { opacity: 0, x: 100 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.7, ease: "easeInOut" },
+    transition: { duration, ease: "easeInOut", delay },
   }
-}
+});
