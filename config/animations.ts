@@ -1,19 +1,11 @@
-export const fromTopAnimation = {
+export const fromBottomAnimation = ({ duration, delay }: { duration: number; delay: number }) => ({
   hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: "easeInOut" },
+    transition: { duration, ease: "easeInOut", delay },
   }
-}
-export const fromTopAnimationDelay = {
-  hidden: { opacity: 0, y: 100 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, delay: 0.3, ease: "easeInOut" },
-  }
-}
+})
 
 export const fromLeftAnimation = ({ duration, delay }: { duration: number; delay: number }) => ({
   hidden: { opacity: 0, x: -100 },
