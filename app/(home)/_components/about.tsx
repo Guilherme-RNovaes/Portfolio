@@ -39,7 +39,8 @@ const About = () => {
           className="relative flex flex-col gap-2 mr-20"
         >
           <Image src='/images/rotate-text.png' width={400} height={400} className="animate-rotate absolute inset-0 m-auto z-0" alt="rotative text" />
-          <Image src={userProps.imageUrl} alt="user image" width={600} height={600} className="object-cover rounded-full drop-shadow-custom z-10" />
+          <Image src={userProps.imageUrl} alt="user image" width={600} height={600} className="object-cover rounded drop-shadow-custom z-10" />
+          <div className="absolute inset-0 z-20 bg-gradient-to-t from-black to-transparent"></div>
         </motion.div>
       </div>
       <Skills />
