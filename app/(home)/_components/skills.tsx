@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { fromBottomAnimation } from "@/config/animations";
 import Marquee from "./marquee";
+import userProps from "@/config/user";
 
 const Skills = () => {
   return (
@@ -14,7 +15,7 @@ const Skills = () => {
         className="flex flex-col items-center justify-center w-full mb-12 gap-2"
       >
         <h1 className="text-5xl font-semibold">Minhas Skills</h1>
-        <p className="max-w-3xl text-center font-light text-gray-500 text-2xl mb-4">Explore as tecnologias que utilizo em meu dia a dia para o desenvolvimento! Aqui, estão exibidas as ferramentas, linguagens de programação, aplicativos e sistema operacional que utilizo em meu trabalho diário de desenvolvimento.</p>
+        <p className="max-w-3xl text-center font-light text-gray-500 text-2xl mb-4">{userProps.aboutSkills}</p>
       </motion.header>
       <motion.div
         variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
