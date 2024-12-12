@@ -37,7 +37,7 @@ const Navbar = () => {
         </Link>
       </Button>
       <div
-        className="bg-black/60 rounded-full backdrop-blur-3xl p-2 flex items-center shadow-xl shadow-black/20"
+        className="bg-black/60 rounded-full backdrop-blur-sm p-2 flex items-center shadow-xl shadow-black/20"
       >
         <NavbarPageItems isActiveRoute={isActiveRoute} />
       </div>
