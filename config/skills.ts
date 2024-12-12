@@ -6,6 +6,7 @@ import { GrMysql } from "react-icons/gr";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiAlacritty, SiArchlinux, SiBootstrap, SiDocker, SiExpress, SiFirebase, SiFirefox, SiGit, SiGithub, SiLua, SiMariadb, SiMongodb, SiNeovim, SiNextdotjs, SiNextui, SiOracle, SiPostman, SiPrisma, SiRadixui, SiReactrouter, SiStyledcomponents, SiSupabase, SiTailwindcss, SiVercel, SiVim, SiVsco, SiVite, SiFastify, SiTurso, SiClerk, SiLazyvim, SiVscodium, SiZendesk, SiTmux, SiSqlite, SiRedux } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 
 export interface skill {
   skill: string;
@@ -230,7 +231,7 @@ export const devEnviroment: skill[] = [
   },
   {
     skill: 'VsCode',
-    icon: SiVsco,
+    icon: VscVscode,
     stack: 'devenviroment',
   },
   {
