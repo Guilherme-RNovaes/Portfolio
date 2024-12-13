@@ -15,9 +15,9 @@ export interface User {
 const userProps: User =
 {
   name: 'Guilherme Novaes',
-  profession: 'Fullstack Developer',
+  profession: 'Desenvolvedor Fullstack',
   cel: '(16)98844-8896',
-  hero: 'Desenvolvedor Fullstack com foco em JavaScript, TypeScript e React. Transformo ideias em código eficiente e soluções digitais que fazem a diferença. Que tal conversarmos?',
+  hero: 'Com foco em JavaScript, TypeScript e React. Transformo ideias em código eficiente e soluções digitais que fazem a diferença. Que tal conversarmos?',
   about: 'Desenvolvedor autônomo, especializado em criar soluções digitais como Landing Pages, E-commerces e Páginas Institucionais, unindo funcionalidade, design e alta performance para potencializar sua presença online.',
   aboutSkills: 'Descubra as tecnologias que fazem parte do meu dia a dia! Aqui, você encontrará as ferramentas, linguagens, aplicativos e sistemas que utilizo para desenvolver com eficiência.',
   aboutServices: 'Transformo ideias em soluções digitais. Com expertise em React e desenvolvimento full-stack, ofereço serviços personalizados para atender às suas necessidades, incluindo:',
