@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { fromBottomAnimation, fromLeftAnimation, fromRightAnimation } from "@/config/animations";
 import { services } from "@/config/services";
 import userProps from "@/config/user";
+import AnimatedRow from "./animated-row";
 
 const Services = () => {
   return (
@@ -34,44 +35,10 @@ const Services = () => {
         ))}
       </div>
       <div className="flex flex-col gap-10 w-full">
-        <motion.div
-          variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
-          initial="hidden"
-          whileInView="visible"
-          className="flex flex-row items-center"
-        >
-          <h1 className="uppercase font-medium text-[10rem]">seu</h1>
-          <div className="w-full h-[1px] bg-black mt-4" />
-        </motion.div>
-        <motion.div
-          variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
-          initial="hidden"
-          whileInView="visible"
-          className="flex flex-row items-center"
-        >
-          <div className="w-[35%] h-[1px] bg-black mt-4" />
-          <h1 className="uppercase font-medium text-[10rem]">sucesso</h1>
-          <div className="w-full h-[1px] bg-black mt-4" />
-        </motion.div>
-        <motion.div
-          variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
-          initial="hidden"
-          whileInView="visible"
-          className="flex flex-row items-center"
-        >
-          <div className="w-full h-[1px] bg-black mt-4" />
-          <h1 className="uppercase font-medium text-[10rem]">minha</h1>
-          <div className="w-full h-[1px] bg-black mt-4" />
-        </motion.div>
-        <motion.div
-          variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
-          initial="hidden"
-          whileInView="visible"
-          className="flex flex-row items-center"
-        >
-          <div className="w-full h-[1px] bg-black mt-4" />
-          <h1 className="uppercase font-medium text-[10rem]">prioridade</h1>
-        </motion.div>
+        <AnimatedRow text="seu" leftLine={false} rightLine={true} />
+        <AnimatedRow text="sucesso" leftLine={false} halfLine={true} rightLine={true} />
+        <AnimatedRow text="minha" leftLine={true} rightLine={true} />
+        <AnimatedRow text="prioridade" leftLine={true} rightLine={false} />
       </div>
     </div >
   )
