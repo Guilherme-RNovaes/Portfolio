@@ -16,7 +16,7 @@ const Services = () => {
         className="flex items-center justify-between w-full mb-40"
       >
         <h1 className="text-9xl font-light text-black tracking-wide">Serviços</h1>
-        <p className="max-w-2xl text-right font-light text-gray-600 text-4xl">{userProps.aboutServices}</p>
+        <p className="max-w-2xl text-right font-light text-gray-600 text-3xl">{userProps.aboutServices}</p>
       </motion.header>
       <div className="flex flex-col gap-10 w-full mb-20">
         {services.map((props, index) => (
