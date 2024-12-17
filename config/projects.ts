@@ -2,6 +2,7 @@ export interface project {
   name: string;
   description: string;
   stacks: string[];
+  services: string[];
   link: string;
   source: string;
   img: string;
@@ -21,13 +22,21 @@ export const projectProps: project[] = [
       'PostgreeSQL',
       'Clerk'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados',
+      'Autenticação',
+      'Metodos de pagamento'
+    ],
     link: '/production',
     source: 'https://github.com/Guilherme-RNovaes/finance-ai',
     img: '/images/finance_ai.png',
     direction: 'left',
   },
   {
-    name: 'casecobra-ecommerce',
+    name: 'casecobra',
     description: 'Aplicação ecommerce com foco em criação de capinhas para iphone, a qual o cliente pode escolher e personalizar sua capinha com sua própria imagem.',
     stacks: [
       'Javascript',
@@ -38,13 +47,20 @@ export const projectProps: project[] = [
       'MongoDB',
       'Clerk'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'Banco de dados',
+      'Autenticação',
+      'Metodos de pagamento'
+    ],
     link: '/production',
     source: 'https://github.com/Guilherme-RNovaes/casecobra',
     img: '/images/case_cobra_ecommerce.png',
     direction: 'right',
   },
   {
-    name: 'micro-saas-todo-app',
+    name: 'todo-app',
     description: 'Aplicação micro-saas de lista de tarefas, com foco na criação de listas de tarefas personalizáveis, criação de prazos e lembretes.',
     stacks: [
       'Javascript',
@@ -54,6 +70,13 @@ export const projectProps: project[] = [
       'Prisma',
       'SQLite',
       'NextAuth'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'Banco de dados',
+      'Autenticação',
+      'Metodos de pagamento'
     ],
     link: '/production',
     source: 'https://github.com/Guilherme-RNovaes/micro-saas-todo-app',
@@ -72,6 +95,11 @@ export const projectProps: project[] = [
       'PostgreeSQL',
       'Supabase',
       'NextAuth'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'Banco de dados'
     ],
     link: '/production',
     source: 'https://github.com/Guilherme-RNovaes/project-master',
@@ -92,6 +120,12 @@ export const projectProps: project[] = [
       'API',
       'Maps'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
+    ],
     link: 'https://convite-de-casamento.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/wedding-invitation',
     img: '/images/wedding_invitation.png',
@@ -110,6 +144,12 @@ export const projectProps: project[] = [
       'Supabase',
       'OAuth'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
+    ],
     link: 'https://fsw-babershop.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/fsw-babershop',
     img: '/images/fsw_barber.png',
@@ -125,6 +165,12 @@ export const projectProps: project[] = [
       'Css',
       'TMDB API'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
+    ],
     link: 'https://guilherme-rnovaes.github.io/netflix-react-clone/',
     source: 'https://github.com/Guilherme-RNovaes/netflix-react-clone',
     img: '/images/netflix_clone.png',
@@ -139,6 +185,12 @@ export const projectProps: project[] = [
       'Html',
       'Css'
     ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
+    ],
     link: 'https://google-keep-clone-blond.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/google-keep-clone',
     img: '/images/google_keep_clone.png',
@@ -151,6 +203,12 @@ export const projectProps: project[] = [
       'Javascript',
       'Html',
       'Css'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
     ],
     link: 'https://pearson-hardman-one.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/pearson-hardman',
@@ -165,6 +223,12 @@ export const projectProps: project[] = [
       'React',
       'Html',
       'Css'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'API',
+      'Banco de dados'
     ],
     link: 'https://gnovaes-portfolio-old.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/Portfolio',
