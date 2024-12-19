@@ -2,6 +2,7 @@ import HeroSection from "./_components/hero";
 import About from "./_components/about";
 import Services from "./_components/services";
 import Portfolio from "./_components/portfolio";
+import Contact from "./_components/contact";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
     </div>
   );
 }
