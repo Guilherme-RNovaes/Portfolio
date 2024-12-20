@@ -28,6 +28,10 @@ const idNavigationProps: navigation[] = [
     href: '/#services',
   },
   {
+    name: 'Portfolio',
+    href: '/#portfolio',
+  },
+  {
     name: 'Contato',
     href: '/#contact',
   },
