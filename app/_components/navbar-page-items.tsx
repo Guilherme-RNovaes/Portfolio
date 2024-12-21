@@ -2,10 +2,10 @@
 
 import { Button } from '@/app/_components/ui/button';
 import Link from 'next/link';
-import pageNavigationProps from '@/config/navigation';
+import { idNavigationProps } from '@/config/navigation';
 
 
-const navigationItem = pageNavigationProps;
+const navigationItem = idNavigationProps;
 
 type NavbarProps = {
   isActiveRoute: (route: string) => boolean;
