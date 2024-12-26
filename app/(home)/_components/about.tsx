@@ -9,7 +9,7 @@ import Skills from "./skills";
 
 const About = () => {
   return (
-    <div id="about" className="min-h-screen w-screen flex flex-col items-center bg-background pt-20 px-36">
+    <div className="min-h-screen w-screen flex flex-col items-center bg-background pt-20 px-36">
       <motion.header
         variants={fromBottomAnimation({ duration: 0.7, delay: 0 })}
         initial="hidden"
@@ -44,7 +44,7 @@ const About = () => {
         </motion.div>
       </div>
       <Skills />
-    </div >
+    </div>
   )
 }
 

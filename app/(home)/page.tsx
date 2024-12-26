@@ -7,11 +7,21 @@ import Contact from "./_components/contact";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background">
-      <HeroSection />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

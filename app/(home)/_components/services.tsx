@@ -8,7 +8,7 @@ import AnimatedRow from "./animated-row";
 
 const Services = () => {
   return (
-    <div id="services" className="min-h-screen w-screen flex flex-col items-center bg-background text-foreground light pt-40 px-36">
+    <div className="min-h-screen w-screen flex flex-col items-center bg-background text-foreground light pt-40 px-36">
       <motion.header
         variants={fromBottomAnimation({ duration: 0.7, delay: 0 })}
         initial="hidden"
