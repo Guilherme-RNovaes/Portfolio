@@ -2,9 +2,7 @@
 
 import { motion } from "motion/react"
 import { usePathname } from "next/navigation";
-import NavbarItems from "./navbar-page-items";
-import NavbarPageItems from "./navbar-page-items";
-import NavbarIdItems from "./navbar-id-items";
+import NavbarItems from "./navbar-items";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
@@ -39,10 +37,7 @@ const Navbar = () => {
       <div
         className="bg-black/60 rounded-full backdrop-blur-sm p-2 flex items-center shadow-xl shadow-black/20"
       >
-        <NavbarPageItems isActiveRoute={isActiveRoute} />
-      </div>
-      <div className="fixed right-4 md:right-8">
-        <NavbarIdItems />
+        <NavbarItems />
       </div>
     </motion.nav>
   )
