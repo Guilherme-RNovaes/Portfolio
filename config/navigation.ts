@@ -1,41 +1,35 @@
 export type navigation = {
   name: string;
   href: string;
+  id: string;
 }
 
-const pageNavigationProps: navigation[] = [
-  {
-    name: 'Início',
-    href: '/',
-  },
-  {
-    name: 'Portfolio',
-    href: '/portfolio',
-  },
-]
-
-const idNavigationProps: navigation[] = [
+const NavigationProps: navigation[] = [
   {
     name: 'Home',
     href: '/#home',
+    id: 'home',
   },
   {
     name: 'Sobre',
     href: '/#about',
+    id: 'about',
   },
   {
     name: 'Serviços',
     href: '/#services',
+    id: 'services',
   },
   {
     name: 'Portfolio',
     href: '/#portfolio',
+    id: 'portfolio',
   },
   {
     name: 'Contato',
     href: '/#contact',
+    id: 'contact',
   },
 ]
 
-export default pageNavigationProps;
-export { idNavigationProps };
+export default NavigationProps;
