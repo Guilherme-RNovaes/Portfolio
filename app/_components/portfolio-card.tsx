@@ -39,24 +39,24 @@ const PortfolioCard = ({ direction, name, img, description, stacks, services, li
         </DialogContent>
       </Dialog>
       <div className={`flex flex-col items-center gap-6 ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
-        <h1 className="text-7xl uppercase">{name}</h1>
-        <p className="text-2xl text-zinc-400 font-light max-w-xs md:max-w-xl truncate text-wrap">{description}</p>
+        <h1 className="text-4xl md:text-7xl uppercase">{name}</h1>
+        <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-xs md:max-w-xl truncate text-wrap">{description}</p>
         <div className={`flex items-center justify-center ${isRightDirection ? 'md:justify-start' : 'md:justify-end'} gap-2 flex-wrap`}>
           {stacks ? (
             stacks.map((stacks, index) => (
               <Badge variant="default" key={index}>
-                <p className="font-light text-lg">{stacks}</p>
+                <p className="font-light text-sm md:text-lg">{stacks}</p>
               </Badge>
             ))
           ) : (
             services.map((services, index) => (
               <Badge variant="default" key={index}>
-                <p className="font-light text-lg">{services}</p>
+                <p className="font-light text-sm md:text-lg">{services}</p>
               </Badge>
             ))
           )}
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-row gap-2 md:gap-4">
           <Button asChild>
             <Link href={link} target="_blank" rel="noreferrer noopener" className="gap-2">
               <Link2 size={18} />
