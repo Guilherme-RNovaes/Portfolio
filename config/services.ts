@@ -8,27 +8,27 @@ export interface service {
 
 export const services: service[] = [
   {
-    name: "Criação de landing page",
+    name: "Landing Page",
     icon: House,
     side: "left"
   },
   {
-    name: "Criação de site institucional",
+    name: "Site Institucional",
     icon: Building2,
     side: "right"
   },
   {
-    name: "Criação de página de captura",
+    name: "Página de Captura",
     icon: Eye,
     side: "left"
   },
   {
-    name: "Criação de página de vendas",
+    name: "Página de Vendas",
     icon: DollarSign,
     side: "right"
   },
   {
-    name: "Criação de E-commerce",
+    name: "E-commerce",
     icon: ShoppingBag,
     side: "left"
   },
