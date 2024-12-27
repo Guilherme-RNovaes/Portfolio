@@ -15,8 +15,8 @@ const HeroSection = () => {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className="flex flex-col gap-6 items-center pb-6"
       >
-        <h1 className="font-semibold text-8xl tracking-wide">{userProps.name}</h1>
-        <h2 className="text-8xl font-extralight tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
+        <h1 className="font-semibold text-4xl md:text-8xl tracking-wide">{userProps.name}</h1>
+        <h2 className="font-extralight text-4xl md:text-8xl text-center tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
       </motion.div>
       <motion.div
         initial={{ y: 40, opacity: 0 }}
@@ -24,7 +24,7 @@ const HeroSection = () => {
         transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
         className="flex flex-col gap-6 items-center pb-6"
       >
-        <p className="max-w-4xl text-center font-light text-gray-500 text-4xl">{userProps.hero}</p>
+        <p className="max-w-4xl text-center font-light text-gray-500 text-2xl md:text-4xl">{userProps.hero}</p>
       </motion.div>
       <motion.div
         initial={{ y: 30, opacity: 0 }}
@@ -33,7 +33,7 @@ const HeroSection = () => {
         className="flex flex-col gap-6 items-center"
       >
         <Button variant='default' asChild className="group rounded-full">
-          <Link href='/' className="font-semibold text-sm">
+          <Link href='/#contact' className="font-semibold text-sm">
             Entre em contato
             <span className="group-hover:translate-x-1 transition-all">
               <ArrowRight />
