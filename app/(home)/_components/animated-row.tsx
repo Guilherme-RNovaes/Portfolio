@@ -19,7 +19,7 @@ const AnimatedRow = ({ text, leftLine = true, halfLine = false, rightLine = true
   >
     {leftLine && <div className="w-full h-[1px] bg-black mt-4" />}
     {halfLine && <div className="w-[35%] h-[1px] bg-black mt-4" />}
-    <h1 className="uppercase font-medium text-[10rem]">{text}</h1>
+    <h1 className="uppercase md:font-medium text-[3rem] md:text-[7rem] xl:text-[10rem]">{text}</h1>
     {rightLine && <div className="w-full h-[1px] bg-black mt-4" />}
   </motion.div>
 );
