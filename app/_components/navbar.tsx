@@ -1,18 +1,20 @@
 "use client"
 
 import { motion } from "motion/react"
-import { usePathname } from "next/navigation";
 import NavbarItems from "./navbar-items";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { useState } from "react";
+import NavigationProps from "@/config/navigation";
+import { Menu } from "lucide-react";
+import NavbarMenu from "./navbar-menu";
+
+const navigationItem = NavigationProps;
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-  const router = usePathname();
-
-  const isActiveRoute = (route: string) => {
-    return router === route;
-  };
 
   return (
     <motion.nav
@@ -35,10 +37,14 @@ const Navbar = () => {
         </Link>
       </Button>
       <div
-        className="bg-black/60 rounded-full backdrop-blur-sm p-2 flex items-center shadow-xl shadow-black/20"
+        className="bg-black/60 rounded-full backdrop-blur-sm p-2 gap-2 flex items-center shadow-xl shadow-black/20"
       >
         <NavbarItems />
+        <Button onClick={toggleMenu} className='rounded-full z-50'>
+          <Menu />
+        </Button>
       </div>
+      <NavbarMenu isOpen={isOpen} toggleMenu={toggleMenu} />
     </motion.nav>
   )
 }
