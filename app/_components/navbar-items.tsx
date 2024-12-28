@@ -8,15 +8,13 @@ import { useEffect, useState } from 'react';
 const navigationItem = NavigationProps;
 
 const NavbarItems = () => {
-  type ButtonVariant = 'default' | 'ghost';
-
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.1, // 60% visível na viewport
+      threshold: 0.1,
     };
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -29,12 +27,10 @@ const NavbarItems = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Observar todas as seções da página
     const sections = document.querySelectorAll('section');
     sections.forEach((section) => observer.observe(section));
 
     return () => {
-      // Limpar o observer ao desmontar o componente
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
@@ -47,7 +43,7 @@ const NavbarItems = () => {
             key={index}
             variant={activeSection === props.id ? 'default' : 'ghost'}
             asChild
-            className="w-full rounded-full flex flex-row center justify-start group"
+            className={`${activeSection === props.id ? 'visible' : 'hidden'} w-full rounded-full center justify-start group`}
           >
             <Link href={props.href} className="flex items-center justify-start">
               {props.name}
