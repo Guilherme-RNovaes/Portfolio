@@ -14,7 +14,7 @@ const Contact = () => {
         className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-4 xl:gap-0 w-full mb-20 md:mb-40"
       >
         <h1 className="text-6xl md:text-7xl xl:text-9xl font-light tracking-wide">Contato</h1>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col items-end w-full">
           <p className="max-w-2xl text-right font-light text-xl md:text-2xl xl:text-3xl">Whatsapp: {userProps.cel}</p>
           <p className="max-w-2xl text-right font-light text-xl md:text-2xl xl:text-3xl">{userProps.email}</p>
         </div>
