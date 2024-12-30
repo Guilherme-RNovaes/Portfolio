@@ -1,5 +1,6 @@
 export interface User {
   name: string
+  lastName: string
   profession: string;
   cel: string;
   email: string;
@@ -15,7 +16,8 @@ export interface User {
 
 const userProps: User =
 {
-  name: 'Guilherme Novaes',
+  name: 'Guilherme',
+  lastName: 'Novaes',
   profession: 'Desenvolvedor Fullstack',
   cel: '(16)98844-8896',
   email: 'guilherme00rogerio@gmail.com',
