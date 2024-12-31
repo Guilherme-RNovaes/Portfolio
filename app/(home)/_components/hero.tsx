@@ -1,45 +1,53 @@
 'use client'
 
-import { Button } from "@/app/_components/ui/button"
+import { socialProps } from "@/config/social"
 import userProps from "@/config/user"
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { motion } from "motion/react"
 import Link from "next/link"
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background px-8 md:px-24">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-between bg-background py-14 pt-28 px-8">
       <motion.div
-        initial={{ y: 80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="flex flex-col gap-6 items-center pb-6"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="flex flex-row w-full items-start justify-center"
       >
-        <h1 className="font-semibold text-4xl md:text-6xl lg:text-8xl tracking-wide">{userProps.name}</h1>
-        <h2 className="font-extralight text-4xl md:text-6xl lg:text-8xl text-center tracking-[6px] md:tracking-[15px]">{userProps.profession}</h2>
+        <h1 className="text-6xl text-center md:text-6xl lg:text-8xl xl:text-[8rem] 2xl:text-[11rem] font-semibold uppercase">{userProps.name} {userProps.lastName}</h1>
       </motion.div>
       <motion.div
-        initial={{ y: 40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
-        className="flex flex-col gap-6 items-center pb-6"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="flex flex-col lg:flex-row gap-9 w-full justify-between items-start"
       >
-        <p className="max-w-4xl text-center font-light text-gray-500 text-2xl md:text-3xl lg:text-4xl">{userProps.hero}</p>
+        <h2 className="font-light text-lg md:text-xl lg:text-xl tracking-[5px] md:tracking-[8px] text-left">{userProps.profession}</h2>
+        <p className="max-w-lg text-left font-light text-gray-500 text-lg md:text-xl lg:text-xl">{userProps.hero}</p>
       </motion.div>
+
       <motion.div
-        initial={{ y: 30, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
-        className="flex flex-col gap-6 items-center"
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="flex items-baseline justify-between w-full"
       >
-        <Button variant='default' asChild className="group rounded-full">
-          <Link href='/#contact' className="font-semibold text-sm">
-            Entre em contato
-            <span className="group-hover:translate-x-1 transition-all">
-              <ArrowRight />
-            </span>
-          </Link>
-        </Button>
+        <div>
+          <h2 className="font-light text-lg md:text-xl lg:text-xl tracking-[5px] md:tracking-[8px] text-left">Socials:</h2>
+        </div>
+        <div className="flex flex-col md:flex-row md:gap-10">
+          {socialProps.map((props, index) => (
+            <Link
+              href={props.link}
+              key={index}
+              className="-m-1 uppercase flex flex-row items-center gap-1 group"
+            >
+              {props.name}
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+            </Link>
+          ))}
+        </div>
       </motion.div>
     </div>
   )
