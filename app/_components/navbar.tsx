@@ -31,14 +31,14 @@ const Navbar = () => {
       transition={{ duration: 0.7, ease: "easeInOut" }}
       className="w-full fixed top-0 flex justify-center pt-2 px-8 items-center z-50"
     >
-      <Button asChild variant='default' className="fixed left-8 md:left-12 rounded-full p-6 px-4 shadow-xl">
-        <Link href="/#home">
-          <h1 className="text-black font-semibold text-xl">GN</h1>
-        </Link>
-      </Button>
       <div
         className="bg-black/60 rounded-full backdrop-blur-sm p-2 gap-2 flex items-center shadow-xl shadow-black/20"
       >
+        <Button asChild variant='default' className="rounded-full shadow-xl">
+          <Link href="/#home">
+            <h1 className="text-black font-semibold text-xl">GN</h1>
+          </Link>
+        </Button>
         <NavbarItems />
         <Button onClick={toggleMenu} className='rounded-full z-50'>
           <Menu />

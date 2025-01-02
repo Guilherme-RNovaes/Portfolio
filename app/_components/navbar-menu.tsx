@@ -45,7 +45,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
             transition={{
               x: { duration: 0.6, ease: "easeInOut" },
               scaleY: { duration: 0.4, ease: "easeInOut", delay: 0.6 },
-              opacity: { duration: 1.0 }
+              opacity: { duration: 0.4 }
             }}
             exit={{ opacity: 0 }}
             className="flex flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-black"
@@ -93,7 +93,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.0, ease: "easeInOut" }}
-              className="flex flex-col lg:flex-row items-start md:items-center lg:items-end gap-8 justify-between"
+              className="flex flex-col lg:flex-row items-start md:items-center lg:items-baseline gap-8 justify-between"
             >
               <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10 md:gap-24 lg:gap-36">
                 <div
@@ -107,7 +107,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
                     <Link
                       href={props.link}
                       key={props.name}
-                      className="-m-1 uppercase flex flex-row items-center gap-1 group"
+                      className="md:-m-1 uppercase flex flex-row items-center gap-1 group"
                     >
                       {props.name}
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
@@ -115,8 +115,8 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
                   ))}
                 </div>
                 <div className=" flex flex-col justify-end">
-                  <p className="-m-[3px]">{userProps.email}</p>
-                  <p className="-m-[3px]">{userProps.cel}</p>
+                  <p className="md:-m-[3px]">{userProps.email}</p>
+                  <p className="md:-m-[3px]">{userProps.cel}</p>
                 </div>
               </div>
               <h1 className="uppercase text-2xl">Guilherme Novaes</h1>

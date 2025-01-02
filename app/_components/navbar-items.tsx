@@ -41,9 +41,9 @@ const NavbarItems = () => {
         {navigationItem.map((props, index) => (
           <Button
             key={index}
-            variant={activeSection === props.id ? 'default' : 'ghost'}
+            variant={activeSection === props.id ? 'link' : 'link'}
             asChild
-            className={`${activeSection === props.id ? 'visible' : 'hidden'} w-full rounded-full center justify-start group`}
+            className={`${activeSection === props.id ? 'bg-white/15' : 'hidden md:block'} w-full rounded-full center justify-start group`}
           >
             <Link href={props.href} className="flex items-center justify-start">
               {props.name}
