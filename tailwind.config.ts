@@ -64,7 +64,8 @@ export default {
         }
       },
       fontFamily: {
-        grotesk: ['var(--font-grotesk)', 'sans-serif']
+        grotesk: ['var(--font-grotesk)', 'sans-serif'],
+        panchang: ['Panchang', 'sans-serif']
       },
       borderRadius: {
         lg: 'var(--radius)',
