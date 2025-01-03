@@ -2,16 +2,16 @@
 
 import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import { motion } from "motion/react";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const HeroSection = () => {
   const textContainerRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const tl = gsap.timeline();
 
     tl.fromTo(
