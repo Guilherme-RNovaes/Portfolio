@@ -98,7 +98,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
               <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10 md:gap-24 lg:gap-36">
                 <div
                   onClick={toggleMenu}
-                  className="flex items-center text-6xl md:text-8xl font-extralight md:-mb-4 cursor-pointer"
+                  className="flex items-center text-6xl md:text-8xl font-extralight md:-mb-2 cursor-pointer"
                 >
                   X
                 </div>
@@ -107,7 +107,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
                     <Link
                       href={props.link}
                       key={props.name}
-                      className="md:-m-1 uppercase flex flex-row items-center gap-1 group"
+                      className="uppercase flex flex-row items-center gap-1 group"
                     >
                       {props.name}
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
@@ -115,8 +115,8 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
                   ))}
                 </div>
                 <div className=" flex flex-col justify-end">
-                  <p className="md:-m-[3px]">{userProps.email}</p>
-                  <p className="md:-m-[3px]">{userProps.cel}</p>
+                  <p>{userProps.email}</p>
+                  <p>{userProps.cel}</p>
                 </div>
               </div>
               <h1 className="uppercase text-2xl">Guilherme Novaes</h1>

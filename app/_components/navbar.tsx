@@ -29,10 +29,10 @@ const Navbar = () => {
         scale: 1
       }}
       transition={{ duration: 0.7, ease: "easeInOut" }}
-      className="w-full fixed top-0 flex justify-center pt-2 px-8 items-center z-50"
+      className="w-full fixed top-0 flex justify-center p-2 md:p-6 items-center z-50"
     >
       <div
-        className="bg-black/60 rounded-full backdrop-blur-sm p-2 gap-2 flex items-center shadow-xl shadow-black/20"
+        className="gap-2 w-full rounded-full flex flex-row justify-between items-center "
       >
         <Button asChild variant='default' className="rounded-full shadow-xl">
           <Link href="/#home">
@@ -42,6 +42,7 @@ const Navbar = () => {
         <NavbarItems />
         <Button onClick={toggleMenu} className='rounded-full z-50'>
           <Menu />
+          Menu
         </Button>
       </div>
       <NavbarMenu isOpen={isOpen} toggleMenu={toggleMenu} />

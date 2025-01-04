@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 const navigationItem = NavigationProps;
 
 const NavbarItems = () => {
+  {/*
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
@@ -34,18 +35,18 @@ const NavbarItems = () => {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
-
+*/}
   return (
     <>
-      <div className="flex flex-row gap-2">
+      <div className="flex bg-black/90 shadow-xl shadow-black/20 rounded-full flex-row gap-2">
         {navigationItem.map((props, index) => (
           <Button
             key={index}
-            variant={activeSection === props.id ? 'link' : 'link'}
+            variant='link'
             asChild
-            className={`${activeSection === props.id ? 'bg-white/15' : 'hidden md:block'} w-full rounded-full center justify-start group`}
+            className='w-full center justify-start group'
           >
-            <Link href={props.href} className="flex items-center justify-start">
+            <Link href={props.href} className="hidden md:flex items-center justify-start">
               {props.name}
             </Link>
           </Button>
