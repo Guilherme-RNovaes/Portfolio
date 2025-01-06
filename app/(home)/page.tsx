@@ -3,10 +3,11 @@ import About from "./_components/about";
 import Services from "./_components/services";
 import Portfolio from "./_components/portfolio";
 import Contact from "./_components/contact";
+import { ReactLenis, useLenis } from "lenis/react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background">
+    <ReactLenis root className="min-h-screen flex flex-col items-center justify-center bg-background">
       <section id="home">
         <HeroSection />
       </section>
@@ -22,6 +23,6 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
-    </div>
+    </ReactLenis>
   );
 }
