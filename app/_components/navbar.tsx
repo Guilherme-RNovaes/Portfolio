@@ -32,17 +32,17 @@ const Navbar = () => {
       className="w-full fixed top-0 flex justify-center p-2 md:p-6 items-center z-50"
     >
       <div
-        className="gap-2 w-full rounded-full flex flex-row justify-between items-center "
+        className="gap-2 w-full flex flex-row justify-between items-center "
       >
-        <Button asChild variant='default' className="rounded-full shadow-xl">
+        <Button asChild variant='default' className="rounded-xl shadow-xl">
           <Link href="/#home">
             <h1 className="text-black font-semibold text-xl">GN</h1>
           </Link>
         </Button>
         <NavbarItems />
-        <Button onClick={toggleMenu} className='rounded-full z-50'>
+        <Button onClick={toggleMenu} className='rounded-xl z-50'>
           <Menu />
-          Menu
+          <span className="hidden md:block">Menu</span>
         </Button>
       </div>
       <NavbarMenu isOpen={isOpen} toggleMenu={toggleMenu} />
