@@ -69,7 +69,7 @@ const HeroSection = () => {
             {userProps.profession}
           </span>
         </h2>
-        <p className="overflow-hidden max-w-lg text-left font-light text-gray-500 text-lg md:text-xl lg:text-xl">
+        <p className="overflow-hidden max-w-md text-left font-light text-gray-500 text-lg md:text-xl lg:text-xl">
           <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0">
             {userProps.hero}
           </span>

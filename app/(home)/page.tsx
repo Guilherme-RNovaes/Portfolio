@@ -3,7 +3,7 @@ import About from "./_components/about";
 import Services from "./_components/services";
 import Portfolio from "./_components/portfolio";
 import Contact from "./_components/contact";
-import { ReactLenis, useLenis } from "lenis/react";
+import { ReactLenis } from "lenis/react";
 
 export default function Home() {
   return (
