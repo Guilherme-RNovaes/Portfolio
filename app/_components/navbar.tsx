@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
         </Button>
         <NavbarItems />
-        <Button onClick={toggleMenu} className='rounded-xl z-50'>
+        <Button onClick={toggleMenu} className='rounded-xl z-50 shadow-xl'>
           <Menu />
           <span className="hidden md:block">Menu</span>
         </Button>
