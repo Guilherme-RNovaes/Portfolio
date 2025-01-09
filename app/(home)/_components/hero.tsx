@@ -44,14 +44,14 @@ const HeroSection = () => {
         ref={textContainerRef}
         className="flex flex-col w-full overflow-hidden items-center justify-center"
       >
-        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang font-regular uppercase">
+        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
           {userProps.name.split("").map((char, index) => (
             <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
               {char}
             </span>
           ))}{" "}
         </h1>
-        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang font-regular uppercase">
+        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
           {userProps.lastName.split("").map((char, index) => (
             <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
               {char}
@@ -69,7 +69,7 @@ const HeroSection = () => {
             {userProps.profession}
           </span>
         </h2>
-        <p className="overflow-hidden max-w-md text-left font-light text-gray-500 text-lg md:text-xl lg:text-xl">
+        <p className="overflow-hidden max-w-md text-left font-light text-gray-400 text-lg md:text-xl lg:text-xl">
           <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0">
             {userProps.hero}
           </span>
