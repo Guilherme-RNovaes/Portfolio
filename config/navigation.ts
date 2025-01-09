@@ -11,11 +11,6 @@ const NavigationProps: navigation[] = [
     id: 'home',
   },
   {
-    name: 'Sobre',
-    href: '/#about',
-    id: 'about',
-  },
-  {
     name: 'Serviços',
     href: '/#services',
     id: 'services',
@@ -24,6 +19,11 @@ const NavigationProps: navigation[] = [
     name: 'Portfolio',
     href: '/#portfolio',
     id: 'portfolio',
+  },
+  {
+    name: 'Sobre',
+    href: '/#about',
+    id: 'about',
   },
   {
     name: 'Contato',
