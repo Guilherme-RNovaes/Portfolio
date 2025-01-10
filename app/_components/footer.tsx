@@ -28,6 +28,7 @@ const Footer = () => {
               href={props.link}
               key={index}
               className="uppercase text-zinc-400 hover:text-white transition-colors flex flex-row items-center gap-1"
+              target="_blank" rel="noreferrer noopener"
             >
               <props.icon className="w-4 h-4" />
               <p>{props.name}</p>

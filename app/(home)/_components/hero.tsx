@@ -91,6 +91,7 @@ const HeroSection = () => {
               href={props.link}
               key={index}
               className="uppercase flex flex-row items-center gap-1 group"
+              target="_blank" rel="noreferrer noopener"
             >
               {props.name}
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
