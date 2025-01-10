@@ -83,7 +83,7 @@ const Portfolio = () => {
   ))
 
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center bg-background text-foreground pt-20 md:pt-40 px-8 md:px-24 xl:px-36">
+    <div className="min-h-screen w-screen flex flex-col items-center bg-background text-foreground py-20 md:py-40 px-8 md:px-24 xl:px-36">
       <header
         className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-4 xl:gap-0 w-full mb-20 md:mb-40"
       >

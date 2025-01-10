@@ -9,7 +9,7 @@ import { ArrowRightCircle, Code, FileText, LifeBuoy, MonitorSmartphone, Palette 
 
 const Skills = () => {
   return (
-    <div className="w-screen flex flex-col items-center mb-36 pt-20 px-12 md:px-24 xl:px-36">
+    <div className="w-screen flex flex-col items-center pt-20 px-12 md:px-24 xl:px-36">
       <motion.header
         variants={fromBottomAnimation({ duration: 0.7, delay: 0 })}
         initial="hidden"
