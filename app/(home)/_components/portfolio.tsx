@@ -11,19 +11,6 @@ import { projectProps } from "@/config/projects";
 gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
-  const firstProjects = projectProps.slice(0, 4)
-  const myProjects = firstProjects.map((props) => (
-    <PortfolioCard
-      key={props.name}
-      direction={props.direction}
-      name={props.name}
-      img={props.img}
-      description={props.description}
-      services={props.services}
-      link={props.link}
-      source={props.source}
-    />
-  ))
 
   const containerRef = useRef(null);
 
@@ -44,6 +31,24 @@ const Portfolio = () => {
           toggleActions: "play none none none"
         }
       })
+    gsap.fromTo(
+      ".portfolio-card",
+      { opacity: 0 },
+      {
+        x: "0%",
+        opacity: 1,
+        duration: 1,
+        ease: "power.inOut",
+        stagger: 1,
+        scrollTrigger: {
+          trigger: PortfolioContainerElement,
+          start: "top 100%",
+          end: "bottom 100%",
+          scrub: true,
+          markers: false,
+        },
+      }
+    )
     gsap.from(
       ".fromright-reveal",
       {
@@ -59,6 +64,23 @@ const Portfolio = () => {
       },
     )
   })
+
+  const firstProjects = projectProps.slice(0, 4)
+
+  const myProjects = firstProjects.map((props) => (
+    <div className="portfolio-card overflow-hidden opacity-0">
+      <PortfolioCard
+        key={props.name}
+        direction={props.direction}
+        name={props.name}
+        img={props.img}
+        description={props.description}
+        services={props.services}
+        link={props.link}
+        source={props.source}
+      />
+    </div>
+  ))
 
   return (
     <div className="min-h-screen w-screen flex flex-col items-center bg-background text-foreground pt-20 md:pt-40 px-8 md:px-24 xl:px-36">
@@ -76,7 +98,7 @@ const Portfolio = () => {
           ))}
         </div>
       </header>
-      <div className="flex flex-col gap-10 md:gap-20 overflow-hidden">
+      <div ref={containerRef} className="flex flex-col gap-10 md:gap-20 overflow-hidden">
         {myProjects}
       </div>
     </div >
