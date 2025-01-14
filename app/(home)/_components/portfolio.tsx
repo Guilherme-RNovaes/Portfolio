@@ -92,7 +92,7 @@ const Portfolio = () => {
         </div>
         <div ref={containerRef} className="max-w-2xl text-right">
           {userProps.aboutProjects.split("").map((char, i) => (
-            <span key={i} className="fromright-reveal translate-x-[115%] font-light text-xl md:text-2xl xl:text-3xl">
+            <span key={i} className="fromright-reveal font-light text-xl md:text-2xl xl:text-3xl">
               {char}
             </span>
           ))}
