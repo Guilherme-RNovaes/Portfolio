@@ -73,7 +73,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="flex flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-black"
+          className="flex flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-background"
         >
           <div ref={headerRef} className="flex justify-between">
             <h1 className="font-bold text-2xl">GN</h1>
@@ -85,7 +85,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
               close
             </Button>
           </div>
-          <div className="relative flex flex-col md:pl-30 lg:pl-40 text-white">
+          <div className="relative flex flex-col md:pl-30 lg:pl-40 text-foreground">
             {NavigationProps.map((props, index) => (
               <div
                 ref={(el: any) => (navItemsRef.current[index] = el!)}

@@ -15,8 +15,8 @@ const Services = () => {
         whileInView="visible"
         className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-4 xl:gap-0 w-full mb-20 md:mb-40"
       >
-        <h1 className="text-6xl md:text-7xl xl:text-9xl font-light text-black tracking-wide">Serviços</h1>
-        <p className="max-w-2xl text-right font-light text-gray-600 text-xl md:text-2xl xl:text-3xl">{userProps.aboutServices}</p>
+        <h1 className="text-6xl md:text-7xl xl:text-9xl font-light text-foreground tracking-wide">Serviços</h1>
+        <p className="max-w-2xl text-right font-light text-sub text-xl md:text-2xl xl:text-3xl">{userProps.aboutServices}</p>
       </motion.header>
       <div className="flex flex-col gap-10 w-full mb-20 overflow-hidden">
         {services.map((props, index) => (
@@ -25,10 +25,10 @@ const Services = () => {
             initial="hidden"
             whileInView="visible"
             key={index}
-            className={`${props.side === 'left' ? 'mr-0 md:mr-14' : 'mr-0 md:ml-14'} flex items-center justify-between border border-gray-400 rounded-full px-6 py-6 md:px-10 md:py-10 lg:py-16 md:gap-10 xl:gap-20`}
+            className={`${props.side === 'left' ? 'mr-0 md:mr-14' : 'mr-0 md:ml-14'} flex items-center justify-between border border-sub rounded-full px-6 py-6 md:px-10 md:py-10 lg:py-16 md:gap-10 xl:gap-20`}
           >
             <h1 className="font-light text-2xl md:text-3xl lg:text-5xl">{props.name}</h1>
-            <div className="border border-gray-400 rounded-full p-4 md:px-6 lg:px-8 md:py-2">
+            <div className="border border-sub rounded-full p-4 md:px-6 lg:px-8 md:py-2">
               <props.icon size={26} />
             </div>
           </motion.div>

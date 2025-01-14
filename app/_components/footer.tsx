@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col light bg-background text-foreground items-center justify-center px-8 py-16 md:p-16 gap-8 border-t border-1 border-zinc-300">
+    <footer className="flex flex-col light bg-background text-foreground items-center justify-center px-8 py-16 md:p-16 gap-8 border-t border-1 border-sub">
       <div className="flex flex-row items-start justify-around w-full">
         <h1 className="font-semibold text-2xl">GN</h1>
         <div className="flex flex-col">
@@ -27,7 +27,7 @@ const Footer = () => {
             <Link
               href={props.link}
               key={index}
-              className="uppercase text-zinc-400 hover:text-foreground transition-colors flex flex-row items-center gap-1"
+              className="uppercase text-sub hover:text-foreground transition-colors flex flex-row items-center gap-1"
               target="_blank" rel="noreferrer noopener"
             >
               <props.icon className="w-4 h-4" />
@@ -36,7 +36,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className=" text-zinc-400 flex flex-col items-center text-sm w-full">
+      <div className=" text-sub flex flex-col items-center text-sm w-full">
         <p>©2025 Todos os direitos reservados.</p>
         <p>Desenvolvido por GN | Dev.</p>
       </div>

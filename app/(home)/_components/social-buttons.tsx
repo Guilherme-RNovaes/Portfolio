@@ -12,14 +12,14 @@ const SocialButtons = () => {
       {socialProps.map((social) =>
         <Button
           variant="ghost"
-          className="group relative overflow-hidden pl-0 pr-4 pt-2 border-b border-gray-500 text-gray-500 hover:text-black hover:bg-black transition-colors bg-transparent rounded-none"
+          className="group relative overflow-hidden pl-0 pr-4 pt-2 border-b border-sub text-sub hover:text-background hover:bg-background transition-colors bg-transparent rounded-none"
           asChild
           key={social.name}
         >
           <Link href={social.link} target="_blank" rel="noreferrer noopener">
             <motion.div className="w-full" whileHover="hover">
               <motion.div
-                className="absolute inset-0 bg-white"
+                className="absolute inset-0 bg-foreground"
                 initial={{ width: 0 }}
                 variants={{ hover: { width: "100%" }, }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
