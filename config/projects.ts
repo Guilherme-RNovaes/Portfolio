@@ -60,53 +60,6 @@ export const projectProps: project[] = [
     direction: 'right',
   },
   {
-    name: 'todo-app',
-    description: 'Aplicação micro-saas de lista de tarefas, com foco na criação de listas de tarefas personalizáveis, criação de prazos e lembretes.',
-    stacks: [
-      'Javascript',
-      'Typescript',
-      'NextJs',
-      'Tailwind',
-      'Prisma',
-      'SQLite',
-      'NextAuth'
-    ],
-    services: [
-      'Aplicação web',
-      'Landing Page',
-      'Banco de dados',
-      'Autenticação',
-      'Metodos de pagamento'
-    ],
-    link: '/production',
-    source: 'https://github.com/Guilherme-RNovaes/micro-saas-todo-app',
-    img: '/images/micro_saas_todo_app.png',
-    direction: 'left',
-  },
-  {
-    name: 'project-master',
-    description: 'A aplicação em si é um gerenciador de projetos, com funções como criação de projeto, adição de tarefas, to-do e prazos.',
-    stacks: [
-      'Javascript',
-      'Typescript',
-      'NextJs',
-      'Tailwind',
-      'Prisma',
-      'PostgreeSQL',
-      'Supabase',
-      'NextAuth'
-    ],
-    services: [
-      'Aplicação web',
-      'Landing Page',
-      'Banco de dados'
-    ],
-    link: '/production',
-    source: 'https://github.com/Guilherme-RNovaes/project-master',
-    img: '/images/project_master.png',
-    direction: 'right',
-  },
-  {
     name: 'wedding-invitation',
     description: 'Aplicação feita com o propósito de servir como um convite para meu casamento, com confirmação de presença e presentes.',
     stacks: [
@@ -153,6 +106,53 @@ export const projectProps: project[] = [
     link: 'https://fsw-babershop.vercel.app/',
     source: 'https://github.com/Guilherme-RNovaes/fsw-babershop',
     img: '/images/fsw_barber.png',
+    direction: 'right',
+  },
+  {
+    name: 'todo-app',
+    description: 'Aplicação micro-saas de lista de tarefas, com foco na criação de listas de tarefas personalizáveis, criação de prazos e lembretes.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'SQLite',
+      'NextAuth'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'Banco de dados',
+      'Autenticação',
+      'Metodos de pagamento'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/micro-saas-todo-app',
+    img: '/images/micro_saas_todo_app.png',
+    direction: 'left',
+  },
+  {
+    name: 'project-master',
+    description: 'A aplicação em si é um gerenciador de projetos, com funções como criação de projeto, adição de tarefas, to-do e prazos.',
+    stacks: [
+      'Javascript',
+      'Typescript',
+      'NextJs',
+      'Tailwind',
+      'Prisma',
+      'PostgreeSQL',
+      'Supabase',
+      'NextAuth'
+    ],
+    services: [
+      'Aplicação web',
+      'Landing Page',
+      'Banco de dados'
+    ],
+    link: '/production',
+    source: 'https://github.com/Guilherme-RNovaes/project-master',
+    img: '/images/project_master.png',
     direction: 'right',
   },
   {
