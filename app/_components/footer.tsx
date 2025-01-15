@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col light bg-background text-foreground items-center justify-center px-8 py-16 md:p-16 gap-8 border-t border-1 border-sub">
-      <div className="flex flex-row items-start justify-around w-full">
+    <footer className="flex flex-col light bg-background text-foreground items-center justify-center px-8 py-16 md:p-16 lg:px-36 gap-8 border-t border-1 border-sub">
+      <div className="flex flex-row items-start justify-between pb-10 w-full">
         <h1 className="font-semibold text-2xl">GN</h1>
         <div className="flex flex-col">
           {NavigationProps.map((props, index) => (
@@ -36,9 +36,9 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className=" text-sub flex flex-col items-center text-sm w-full">
-        <p>©2025 Todos os direitos reservados.</p>
-        <p>Desenvolvido por GN | Dev.</p>
+      <div className="text-sub flex flex-col w-full">
+        <p className="text-2xl md:text-5xl font-semibold">©2025 Guilherme Novaes</p>
+        <p className="text-2xl md:text-5xl font-semibold" >Todos os direitos reservados</p>
       </div>
     </footer>
   )
