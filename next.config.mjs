@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    optimizeCss: true, // Reduz processamento de CSS
+    optimizeCss: false, // Reduz processamento de CSS
   },
 };
 
