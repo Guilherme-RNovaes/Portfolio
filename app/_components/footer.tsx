@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
 
   const footerRef = useRef(null)
-  const nameRef = useRef(null)
 
   useGSAP(() => {
     gsap.fromTo(
