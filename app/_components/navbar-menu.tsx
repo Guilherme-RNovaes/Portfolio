@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import NavigationProps from "@/config/navigation";
 import { ArrowRightIcon, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { MouseEventHandler } from "react";
-import { Button } from "./ui/button";
 import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
 
@@ -21,11 +21,10 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
   const navItemsRef = useRef<HTMLDivElement[]>([]);
   const footerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     if (isOpen && menuRef.current) {
       const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-      // Animação de fundo
       tl.fromTo(
         menuRef.current,
         { x: "100%", scaleY: 0.002 },
@@ -38,7 +37,6 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
         { scaleY: 1, duration: 0.6 }
       );
 
-      // Cabeçalho
       tl.fromTo(
         headerRef.current,
         { opacity: 0 },
@@ -46,7 +44,6 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
         "-=0.3" // Inicia antes de terminar a animação anterior
       );
 
-      // Itens de navegação
       if (navItemsRef.current.length > 0) {
         tl.fromTo(
           navItemsRef.current,
@@ -56,7 +53,6 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
         );
       }
 
-      // Rodapé
       if (footerRef.current) {
         tl.fromTo(
           footerRef.current,
@@ -77,13 +73,12 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
         >
           <div ref={headerRef} className="flex justify-between">
             <h1 className="font-bold text-2xl">GN</h1>
-            <Button
-              variant="link"
-              className="decoration-transparent uppercase text-2xl"
+            <button
+              className="decoration-transparent uppercase text-2xl font-medium"
               onClick={toggleMenu}
             >
               close
-            </Button>
+            </button>
           </div>
           <div className="relative flex flex-col md:pl-30 lg:pl-40 text-foreground">
             {NavigationProps.map((props, index) => (
