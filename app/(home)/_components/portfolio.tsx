@@ -67,8 +67,8 @@ const Portfolio = () => {
 
   const firstProjects = projectProps.slice(0, 4)
 
-  const myProjects = firstProjects.map((props) => (
-    <div className="portfolio-card overflow-hidden opacity-0">
+  const myProjects = firstProjects.map((props, i) => (
+    <div key={i} className="portfolio-card overflow-hidden opacity-0">
       <PortfolioCard
         key={props.name}
         direction={props.direction}

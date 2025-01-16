@@ -5,11 +5,8 @@ import NavbarItems from "./navbar-items";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import NavigationProps from "@/config/navigation";
 import { Menu } from "lucide-react";
 import NavbarMenu from "./navbar-menu";
-
-const navigationItem = NavigationProps;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

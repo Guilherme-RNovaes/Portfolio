@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { ReactNode, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import NavigationProps from "@/config/navigation";
@@ -83,7 +83,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
           <div className="relative flex flex-col md:pl-30 lg:pl-40 text-foreground">
             {NavigationProps.map((props, index) => (
               <div
-                ref={(el: any) => (navItemsRef.current[index] = el!)}
+                ref={(el: null) => (navItemsRef.current[index] = el!)}
                 key={index}
                 className="flex justify-start items-center w-full"
               >

@@ -5,7 +5,7 @@ import { fromBottomAnimation } from "@/config/animations";
 import Marquee from "./marquee";
 import userProps from "@/config/user";
 import SkillCard from "./skill-card";
-import { ArrowRightCircle, Code, FileText, LifeBuoy, MonitorSmartphone, Palette } from "lucide-react";
+import { ArrowRightCircle, LifeBuoy, MonitorSmartphone } from "lucide-react";
 
 const Skills = () => {
   return (
