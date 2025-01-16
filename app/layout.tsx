@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Navbar from "./_components/navbar";
 import ScrollToTopButton from "./_components/scroll-to-top-button";
 import Footer from "./_components/footer";
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <SpeedInsights />
         <ScrollToTopButton />
         <Footer />
       </body>
