@@ -17,7 +17,7 @@ const Portfolio = () => {
   useGSAP(() => {
     const PortfolioContainerElement = containerRef.current;
     gsap.fromTo(
-      ".text-reveal",
+      ".portfoliotext-reveal",
       { y: "115%" },
       {
         y: "0%",
@@ -28,7 +28,7 @@ const Portfolio = () => {
           trigger: PortfolioContainerElement,
           start: "top 80%",
           end: "top 50%",
-          toggleActions: "play none none none"
+          toggleActions: "play play reverse reverse"
         }
       })
     gsap.fromTo(
@@ -50,7 +50,7 @@ const Portfolio = () => {
       }
     )
     gsap.from(
-      ".fromright-reveal",
+      ".aboutportfolio-reveal",
       {
         scrollTrigger: {
           trigger: PortfolioContainerElement,
@@ -88,11 +88,11 @@ const Portfolio = () => {
         className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-4 xl:gap-0 w-full mb-20 md:mb-40"
       >
         <div ref={containerRef} className="overflow-hidden w-full">
-          <h1 className="text-reveal translate-y-[115%] text-6xl md:text-7xl xl:text-9xl font-light tracking-wide">Portfolio</h1>
+          <h1 className="portfoliotext-reveal translate-y-[115%] text-6xl md:text-7xl xl:text-9xl font-light tracking-wide">Portfolio</h1>
         </div>
         <div ref={containerRef} className="max-w-2xl text-right">
           {userProps.aboutProjects.split("").map((char, i) => (
-            <span key={i} className="fromright-reveal font-light text-xl md:text-2xl xl:text-3xl">
+            <span key={i} className="aboutportfolio-reveal font-light text-xl md:text-2xl xl:text-3xl">
               {char}
             </span>
           ))}

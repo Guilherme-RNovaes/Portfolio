@@ -13,7 +13,7 @@ interface animatedRowProps {
 
 const AnimatedRow = ({ text, leftLine = true, halfLine = false, halfLine2 = false, rightLine = true }: animatedRowProps) => (
   <motion.div
-    variants={fromBottomAnimation({ duration: 0.7, delay: 0.5 })}
+    variants={fromBottomAnimation({ duration: 1, delay: 0.5 })}
     initial="hidden"
     whileInView="visible"
     className="flex flex-row items-center"
