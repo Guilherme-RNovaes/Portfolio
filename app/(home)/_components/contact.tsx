@@ -5,19 +5,30 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import { Button } from "@/app/_components/ui/button";
 import Link from "next/link";
-import { socialProps } from "@/config/social";
 import { ArrowUpRight, CornerDownRight } from "lucide-react";
-import { RiArrowRightUpLine } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
 
   const containerRef = useRef(null);
+  const contactRef = useRef(null);
+  const headerRef = useRef(null);
+  const textRef = useRef(null)
+  const buttonRef = useRef(null)
+  const mailRef = useRef(null)
 
   useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: contactRef.current,
+        start: "top center",
+        end: "top center",
+        toggleActions: "play none none none",
+      }
+    })
+
     gsap.fromTo(
       ".contact-text-reveal",
       { y: "115%", opacity: "100%" },
@@ -28,12 +39,68 @@ const Contact = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 80%",
+          start: "top bottom",
+          toggleActions: "play none none none",
           end: "top 50%",
-          toggleActions: "play none none none"
         }
-      })
+      }
+    )
+
+    tl.fromTo(
+      contactRef.current,
+      { y: "30%", opacity: 0 },
+      {
+        y: "0%",
+        opacity: 1,
+        ease: "power4.inOut",
+        duration: 1,
+      }
+    )
+
+    tl.fromTo(
+      headerRef.current,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        ease: "power4.inOut",
+        duration: 0.7,
+      },
+      '-=0.3'
+    )
+
+    tl.fromTo(
+      textRef.current,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        ease: "power4.inOut",
+        duration: 0.7,
+      },
+      '-=0.3'
+    )
+
+    tl.fromTo(
+      buttonRef.current,
+      { y: "30%", opacity: 0 },
+      {
+        y: "0",
+        opacity: 1,
+        ease: "power4.inOut",
+        duration: 0.7,
+      }
+    )
+    tl.fromTo(
+      mailRef.current,
+      { y: "30%", opacity: 0 },
+      {
+        y: "0",
+        opacity: 1,
+        ease: "power4.inOut",
+        duration: 0.5,
+      }
+    )
   })
+
   return (
     <div className="min-h-screen w-screen flex flex-col items-center light bg-background text-foreground py-20 md:py-40 px-8 md:px-24 xl:px-36">
       <header
@@ -51,13 +118,13 @@ const Contact = () => {
           </div>
         </div>
       </header>
-      <div className="flex flex-col items-center justify-center gap-20 w-full dark bg-background text-foreground rounded-xl px-5 md:px-36 py-16">
-        <header>
+      <div ref={contactRef} className="opacity-0 flex flex-col items-center justify-center gap-20 w-full dark bg-background text-foreground rounded-xl px-5 md:px-36 py-16">
+        <header ref={headerRef}>
           <h1 className="text-5xl text-center md:text-8xl lg:text-9xl font-semibold uppercase">Vamos fazer acontecer</h1>
         </header>
         <main className="flex flex-col items-center justify-between gap-10">
-          <p className="text-xl max-w-2xl text-center md:text-2xl text-zinc-400">{userProps.aboutContact}</p>
-          <button className="w-[250px] h-[80px] md:w-[320px] md:h-[100px] bg-white rounded-xl text-black uppercase font-semibold text-xl md:text-2xl group">
+          <p ref={textRef} className="text-xl max-w-2xl text-center md:text-2xl text-sub">{userProps.aboutContact}</p>
+          <button ref={buttonRef} className="w-[250px] h-[80px] md:w-[320px] md:h-[100px] bg-foreground rounded-xl text-background uppercase font-semibold text-xl md:text-2xl group">
             <Link
               href="https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!" target="_blank" rel="noreferrer noopener"
               className="flex items-center justify-center gap-2"
@@ -67,7 +134,7 @@ const Contact = () => {
             </Link>
           </button>
         </main>
-        <footer className="flex flex-col items-center text-zinc-300">
+        <footer ref={mailRef} className="flex flex-col items-center text-sub">
           <p className="uppercase text-xl font-semibold tracking-wide">para mais informações</p>
           <div className="flex flex-row items-center gap-1">
             <CornerDownRight className="w-3 h-3" />
