@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect } from "react"
 import HeroSection from "./_components/hero";
 import About from "./_components/about";
 import Services from "./_components/services";
@@ -6,6 +9,10 @@ import Contact from "./_components/contact";
 import { ReactLenis } from "lenis/react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <ReactLenis root className="min-h-screen flex flex-col items-center justify-center bg-background">
       <section id="home">
