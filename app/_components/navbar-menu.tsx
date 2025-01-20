@@ -9,6 +9,7 @@ import Link from "next/link";
 import { MouseEventHandler } from "react";
 import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
+import NavbarMenuItems from "./navbar-menu-items";
 
 interface navbarMenuOptions {
   isOpen: boolean;
@@ -65,73 +66,52 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
   }, [isOpen]);
 
   return (
-    <>
-      {isOpen && (
-        <div
-          ref={menuRef}
-          className="flex flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-background"
+    <div
+      ref={menuRef}
+      className={`${isOpen ? "flex" : "hidden"} flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-background`}
+    >
+      <div ref={headerRef} className="flex justify-between">
+        <h1 className="font-bold text-2xl">GN</h1>
+        <button
+          className="decoration-transparent hover-target uppercase text-2xl font-medium"
+          onClick={toggleMenu}
         >
-          <div ref={headerRef} className="flex justify-between">
-            <h1 className="font-bold text-2xl">GN</h1>
-            <button
-              className="decoration-transparent uppercase text-2xl font-medium"
-              onClick={toggleMenu}
-            >
-              close
-            </button>
+          close
+        </button>
+      </div>
+      <NavbarMenuItems navItemsRef={navItemsRef} toggleMenu={toggleMenu} />
+      <div
+        ref={footerRef}
+        className="flex flex-col lg:flex-row items-start md:items-center lg:items-baseline gap-8 justify-between"
+      >
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10 md:gap-24 lg:gap-36">
+          <div
+            onClick={toggleMenu}
+            className="flex hover-target items-center text-6xl md:text-8xl font-extralight md:-mb-2 cursor-pointer"
+          >
+            X
           </div>
-          <div className="relative flex flex-col md:pl-30 lg:pl-40 text-foreground">
-            {NavigationProps.map((props, index) => (
-              <div
-                ref={(el: null) => (navItemsRef.current[index] = el!)}
+          <div className="flex flex-col">
+            {socialProps.map((props, index) => (
+              <Link
+                href={props.link}
                 key={index}
-                className="flex justify-start items-center w-full"
+                className="uppercase flex flex-row items-center gap-1 group"
+                target="_blank" rel="noreferrer noopener"
               >
-                <Link
-                  href={props.href}
-                  onClick={toggleMenu}
-                  className="flex items-center uppercase text-5xl md:text-7xl group hover:translate-x-12 transition-all"
-                >
-                  <ArrowRightIcon className="hidden md:block h-16 w-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                  {props.name}
-                </Link>
-              </div>
+                {props.name}
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+              </Link>
             ))}
           </div>
-          <div
-            ref={footerRef}
-            className="flex flex-col lg:flex-row items-start md:items-center lg:items-baseline gap-8 justify-between"
-          >
-            <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10 md:gap-24 lg:gap-36">
-              <div
-                onClick={toggleMenu}
-                className="flex items-center text-6xl md:text-8xl font-extralight md:-mb-2 cursor-pointer"
-              >
-                X
-              </div>
-              <div className="flex flex-col">
-                {socialProps.map((props, index) => (
-                  <Link
-                    href={props.link}
-                    key={index}
-                    className="uppercase flex flex-row items-center gap-1 group"
-                    target="_blank" rel="noreferrer noopener"
-                  >
-                    {props.name}
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </Link>
-                ))}
-              </div>
-              <div className="flex flex-col justify-end">
-                <p>{userProps.email}</p>
-                <p>{userProps.cel}</p>
-              </div>
-            </div>
-            <h1 className="uppercase text-2xl">Guilherme Novaes</h1>
+          <div className="flex flex-col justify-end">
+            <p>{userProps.email}</p>
+            <p>{userProps.cel}</p>
           </div>
         </div>
-      )}
-    </>
+        <h1 className="uppercase text-2xl">Guilherme Novaes</h1>
+      </div>
+    </div>
   );
 };
 
