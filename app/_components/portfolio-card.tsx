@@ -24,9 +24,12 @@ const PortfolioCard = ({ direction, name, img, description, stacks, services, li
     <div
       className={`flex flex-col ${isRightDirection ? 'lg:flex-row-reverse -translate-x-[10%]' : 'lg:flex-row translate-x-[10%]'} portfolio-card w-full items-center justify-between mb-12 gap-x-6`}
     >
-      <div className={`relative w-[300px] h-[300px] md:w-[600px] md:h-[450px] mb-8 md:mb-0 rounded-xl cursor-zoom-in overflow-hidden group`}>
+      <Link
+        href={link} target="_blank" rel="noreferrer noopener"
+        className={`relative w-[300px] h-[300px] md:w-[600px] md:h-[450px] mb-8 md:mb-0 rounded-xl hover-projects overflow-hidden group`}
+      >
         <Image src={img} fill alt="project image" className="rounded-xl object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
-      </div>
+      </Link>
       <div className={`flex flex-col items-center gap-6 ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <h1 className="text-4xl md:text-7xl uppercase">{name}</h1>
         <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-xs md:max-w-xl truncate text-wrap">{description}</p>
@@ -44,20 +47,6 @@ const PortfolioCard = ({ direction, name, img, description, stacks, services, li
               </Badge>
             ))
           )}
-        </div>
-        <div className="flex flex-row gap-2 md:gap-4">
-          <Button asChild>
-            <Link href={link} target="_blank" rel="noreferrer noopener" className="gap-2">
-              <Link2 size={18} />
-              Visitar Página
-            </Link>
-          </Button>
-          <Button asChild variant='outline'>
-            <Link href={source} target="_blank" rel="noreferrer noopener" className="gap-2">
-              <Github size={18} />
-              Ver o código
-            </Link>
-          </Button>
         </div>
       </div>
     </div >
