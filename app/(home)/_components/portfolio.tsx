@@ -77,7 +77,6 @@ const Portfolio = () => {
         description={props.description}
         services={props.services}
         link={props.link}
-        source={props.source}
       />
     </div>
   ))
