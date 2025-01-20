@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import Navbar from "./_components/navbar";
 import ScrollToTopButton from "./_components/scroll-to-top-button";
 import Footer from "./_components/footer";
+import CustomCursor from "./_components/custom-cursor";
 
 const clashGrotesk = localFont({
   src: [
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`${clashGrotesk.variable} font-grotesk antialiased dark`}
       >
         <Navbar />
+        <CustomCursor />
         {children}
         <SpeedInsights />
         <ScrollToTopButton />
