@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import NavigationProps from '@/config/navigation';
-import { MouseEventHandler } from 'react';
+import { MouseEventHandler, MutableRefObject } from 'react';
 import { ArrowRightIcon } from 'lucide-react';
 
 interface NavbarMenuItemsProps {
-  navItemsRef: any
+  navItemsRef: MutableRefObject<(HTMLDivElement | null)[]>;
   toggleMenu: MouseEventHandler;
 }
 

@@ -1,7 +1,5 @@
 "use client"
 
-import { Button } from "@/app/_components/ui/button";
-import { Github, Link2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "./ui/badge";

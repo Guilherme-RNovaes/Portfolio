@@ -3,8 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import NavigationProps from "@/config/navigation";
-import { ArrowRightIcon, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { MouseEventHandler } from "react";
 import { socialProps } from "@/config/social";
