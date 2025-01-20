@@ -10,12 +10,11 @@ type Props = {
   img: string;
   description: string;
   link: string;
-  source: string;
   stacks?: string[];
   services: string[];
 }
 
-const PortfolioCard = ({ direction, name, img, description, stacks, services, link, source }: Props) => {
+const PortfolioCard = ({ direction, name, img, description, stacks, services, link }: Props) => {
   const isRightDirection = direction === 'right'
 
   return (
