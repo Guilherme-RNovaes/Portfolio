@@ -15,6 +15,37 @@ const HeroSection = () => {
     const tl = gsap.timeline();
 
     tl.fromTo(
+      ".loader",
+      { x: "-100%" },
+      {
+        x: "0%",
+        ease: "power4.inOut",
+        duration: 3,
+      }
+    );
+
+    tl.fromTo(
+      ".loader-first-bg",
+      { scaleY: "100%" },
+      {
+        scaleY: "0%",
+        ease: "power4.inOut",
+        duration: 1.5,
+      }
+    );
+
+    tl.fromTo(
+      ".loader-second-bg",
+      { scaleY: "100%" },
+      {
+        scaleY: "0%",
+        ease: "power4.inOut",
+        duration: 1.4,
+      },
+      "-=1.2"
+    );
+
+    tl.fromTo(
       ".reveal-hero",
       { y: "100%" },
       {
@@ -39,64 +70,70 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-between bg-background pb-16 pt-28 px-8">
-      <div
-        ref={textContainerRef}
-        className="flex flex-col w-full overflow-hidden items-center justify-center"
-      >
-        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
-          {userProps.name.split("").map((char, index) => (
-            <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
-              {char}
-            </span>
-          ))}{" "}
-        </h1>
-        <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
-          {userProps.lastName.split("").map((char, index) => (
-            <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
-              {char}
-            </span>
-          ))}
-        </h1>
+    <div className="relative">
+      <div className="fixed top-0 left-0 loader-first-bg bg-black min-h-screen w-screen z-[150] flex items-center overflow-hidden">
+        <div className="w-full loader -translate-x-[100%] h-[1px] bg-white" />
       </div>
-
-      <div
-        ref={textContainerRef}
-        className="flex flex-col lg:flex-row gap-9 w-full justify-between items-start overflow-hidden"
-      >
-        <h2 className="overflow-hidden font-light text-lg md:text-xl lg:text-xl text-left">
-          <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0 tracking-[5px] md:tracking-[8px]">
-            {userProps.profession}
-          </span>
-        </h2>
-        <p className="overflow-hidden max-w-md text-left font-light text-sub text-lg md:text-xl lg:text-xl">
-          <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0">
-            {userProps.hero}
-          </span>
-        </p>
-      </div>
-
-      <div
-        ref={textContainerRef}
-        className="reveal-text flex items-baseline justify-between w-full opacity-0"
-      >
-        <div>
-          <h2 className="font-light text-lg md:text-xl lg:text-xl tracking-[5px] md:tracking-[8px] text-left">
-            Socials:
-          </h2>
+      <div className="fixed top-0 left-0 loader-second-bg bg-white min-h-screen w-screen z-[140] flex items-center" />
+      <div className="min-h-screen w-screen flex flex-col items-center justify-between bg-background pb-16 pt-28 px-8">
+        <div
+          ref={textContainerRef}
+          className="flex flex-col w-full overflow-hidden items-center justify-center"
+        >
+          <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
+            {userProps.name.split("").map((char, index) => (
+              <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
+                {char}
+              </span>
+            ))}{" "}
+          </h1>
+          <h1 className="overflow-hidden text-center text-[9vw] md:text-[10vw] lg:text-[10vw] xl:text-[10rem] font-panchang leading-3 font-regular uppercase">
+            {userProps.lastName.split("").map((char, index) => (
+              <span key={index} className="reveal-hero inline-block overflow-hidden translate-y-[115%]">
+                {char}
+              </span>
+            ))}
+          </h1>
         </div>
-        <div className="flex flex-col md:flex-row md:gap-10">
-          {socialProps.map((props, index) => (
-            <Link
-              href={props.link}
-              key={index}
-              className="uppercase flex flex-row items-center gap-1 group"
-              target="_blank" rel="noreferrer noopener"
-            >
-              {props.name}
-              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-            </Link>
-          ))}
+
+        <div
+          ref={textContainerRef}
+          className="flex flex-col lg:flex-row gap-9 w-full justify-between items-start overflow-hidden"
+        >
+          <h2 className="overflow-hidden font-light text-lg md:text-xl lg:text-xl text-left">
+            <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0 tracking-[5px] md:tracking-[8px]">
+              {userProps.profession}
+            </span>
+          </h2>
+          <p className="overflow-hidden max-w-md text-left font-light text-sub text-lg md:text-xl lg:text-xl">
+            <span className="reveal-text inline-block overflow-hidden translate-y-[115%] opacity-0">
+              {userProps.hero}
+            </span>
+          </p>
+        </div>
+
+        <div
+          ref={textContainerRef}
+          className="reveal-text flex items-baseline justify-between w-full opacity-0"
+        >
+          <div>
+            <h2 className="font-light text-lg md:text-xl lg:text-xl tracking-[5px] md:tracking-[8px] text-left">
+              Socials:
+            </h2>
+          </div>
+          <div className="flex flex-col md:flex-row md:gap-10">
+            {socialProps.map((props, index) => (
+              <Link
+                href={props.link}
+                key={index}
+                className="uppercase flex flex-row items-center gap-1 group"
+                target="_blank" rel="noreferrer noopener"
+              >
+                {props.name}
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
