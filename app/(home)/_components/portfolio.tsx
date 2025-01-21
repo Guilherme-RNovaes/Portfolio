@@ -68,7 +68,7 @@ const Portfolio = () => {
   const firstProjects = projectProps.slice(0, 4)
 
   const myProjects = firstProjects.map((props, i) => (
-    <div key={i} className="portfolio-card overflow-hidden opacity-0">
+    <div key={i} className="portfolio-card opacity-0">
       <PortfolioCard
         key={props.name}
         direction={props.direction}
@@ -76,6 +76,7 @@ const Portfolio = () => {
         img={props.img}
         description={props.description}
         services={props.services}
+        year={props.year}
         link={props.link}
       />
     </div>
@@ -97,7 +98,7 @@ const Portfolio = () => {
           ))}
         </div>
       </header>
-      <div ref={containerRef} className="flex flex-col gap-10 md:gap-20 overflow-hidden">
+      <div ref={containerRef} className="flex flex-col gap-10 md:gap-20 ">
         {myProjects}
       </div>
     </div >
