@@ -54,8 +54,8 @@ const Portfolio = () => {
       {
         scrollTrigger: {
           trigger: PortfolioContainerElement,
-          start: "-20% 90%",
-          end: "-20% 20%",
+          start: "-10% 90%",
+          end: "-10% 20%",
           scrub: true,
           markers: false,
         },
