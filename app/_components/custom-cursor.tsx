@@ -11,10 +11,10 @@ const CustomCursor = () => {
     const cursor = cursorRef.current;
     const projectCursor = projectCursorRef.current;
 
-    let rotation = 0; // Ângulo de rotação
-    let lastX = 0; // Última posição X registrada
-    let lastY = 0; // Última posição Y registrada
-    let accumulatedDistance = 0; // Distância acumulada percorrida
+    let rotation = 0;
+    let lastX = 0;
+    let lastY = 0;
+    let accumulatedDistance = 0;
 
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
@@ -143,7 +143,7 @@ const CustomCursor = () => {
           backgroundColor: "white",
           mixBlendMode: "difference",
           pointerEvents: "none",
-          zIndex: 1000,
+          zIndex: 140,
         }}
         className="hidden md:block duration-[0.5]"
       />
@@ -154,9 +154,9 @@ const CustomCursor = () => {
           top: 10,
           left: 10,
           pointerEvents: "none",
-          zIndex: 1000,
+          zIndex: 140,
         }}
-        className="hidden md:flex opacity-0 bg-white/50 backdrop-blur-[30px] duration-[0.5] items-center justify-center rounded-md text-background p-1 gap-2"
+        className="hidden md:flex bg-white/50 opacity-0 backdrop-blur-[30px] duration-[0.5] items-center justify-center rounded-md text-background p-1 gap-2"
       >
         <h1>Visitar página</h1>
         <span className="bg-background rounded-md text-foreground p-1">
