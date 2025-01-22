@@ -124,7 +124,7 @@ const Contact = () => {
         </header>
         <main className="flex flex-col items-center justify-between gap-10">
           <p ref={textRef} className="text-xl max-w-2xl text-center md:text-2xl text-sub">{userProps.aboutContact}</p>
-          <button ref={buttonRef} className="w-[250px] h-[80px] md:w-[320px] md:h-[100px] bg-foreground rounded-xl text-background uppercase font-semibold text-xl md:text-2xl group">
+          <button ref={buttonRef} className="hover-target w-[250px] h-[80px] md:w-[320px] md:h-[100px] bg-foreground rounded-xl text-background uppercase font-semibold text-xl md:text-2xl group">
             <Link
               href="https://api.whatsapp.com/send?phone=5516988448896&text=Ol%C3%A1,%20Guilherme!" target="_blank" rel="noreferrer noopener"
               className="flex items-center justify-center gap-2"
