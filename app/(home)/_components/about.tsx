@@ -9,7 +9,7 @@ import Skills from "./skills";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center text-foreground bg-background py-20 md:py-40 px-8 md:px-24 xl:px-36">
+    <div className="min-h-screen w-screen flex flex-col items-center text-foreground bg-background pt-20 md:pt-40 px-8 md:px-24 xl:px-36">
       <motion.header
         variants={fromBottomAnimation({ duration: 0.7, delay: 0 })}
         initial="hidden"
