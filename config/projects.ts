@@ -35,7 +35,7 @@ export const projectProps: project[] = [
       'Metodos de pagamento'
     ],
     year: 2025,
-    link: '/production',
+    link: 'https://casecobra-one-teal.vercel.app/',
     img: '/images/case_cobra_ecommerce.png',
     direction: 'right',
   },
