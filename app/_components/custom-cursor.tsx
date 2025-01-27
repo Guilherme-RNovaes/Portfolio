@@ -145,7 +145,7 @@ const CustomCursor = () => {
           pointerEvents: "none",
           zIndex: 140,
         }}
-        className="hidden md:block duration-[0.5]"
+        className="hidden md:block duration-75"
       />
       <div
         ref={projectCursorRef}
@@ -156,7 +156,7 @@ const CustomCursor = () => {
           pointerEvents: "none",
           zIndex: 140,
         }}
-        className="hidden md:flex bg-white/50 opacity-0 backdrop-blur-[30px] duration-[0.5] items-center justify-center rounded-md text-background p-1 gap-2"
+        className="hidden md:flex bg-white/50 opacity-0 backdrop-blur-[30px] duration-75 items-center justify-center rounded-md text-background p-1 gap-2"
       >
         <h1>Visitar página</h1>
         <span className="bg-background rounded-md text-foreground p-1">
