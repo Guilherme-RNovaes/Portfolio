@@ -10,7 +10,7 @@ export interface project {
 
 export const projectProps: project[] = [
   {
-    name: 'finance-ai',
+    name: 'Finanças-AI',
     description: 'Gestão financeira & Inteligencia Artificial',
     services: [
       'Desenvolvimento',
@@ -25,7 +25,7 @@ export const projectProps: project[] = [
     direction: 'left',
   },
   {
-    name: 'casecobra',
+    name: 'Case-Cobra',
     description: 'E-Commerce & Inteligência Artificial',
     services: [
       'Desenvolvimento',
@@ -40,7 +40,7 @@ export const projectProps: project[] = [
     direction: 'right',
   },
   {
-    name: 'wedding-invitation',
+    name: 'Francine&Guilherme',
     description: 'Convite de Cerimônia e Festa',
     services: [
       'Desenvolvimento',
@@ -54,7 +54,7 @@ export const projectProps: project[] = [
     direction: 'left',
   },
   {
-    name: 'fsw-barbershop',
+    name: 'Barbearia-FSW',
     description: 'Comércio & Barbearia',
     services: [
       'Desenvolvimento',
