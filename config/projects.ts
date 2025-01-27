@@ -40,7 +40,7 @@ export const projectProps: project[] = [
     direction: 'right',
   },
   {
-    name: 'Francine&Guilherme',
+    name: 'Francine & Guilherme',
     description: 'Convite de Cerimônia e Festa',
     services: [
       'Desenvolvimento',

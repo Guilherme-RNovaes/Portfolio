@@ -29,7 +29,7 @@ const PortfolioCard = ({ direction, name, img, description, year, services, link
       </Link>
       <div className={`flex flex-col items-center gap-6 ${isRightDirection ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <p className="text-xl md:text-2xl text-sub font-light max-w-xs md:max-w-xl truncate text-wrap text-center">{description}</p>
-        <h1 className="text-4xl md:text-7xl uppercase">{name}</h1>
+        <h1 className="text-4xl md:text-7xl uppercase text-center">{name}</h1>
         <div className={`flex items-center w-full max-w-[500px] justify-center ${isRightDirection ? 'md:justify-start' : 'md:justify-end'} gap-2 flex-wrap`}>
           {
             services.map((services, index) => (
