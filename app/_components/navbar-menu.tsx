@@ -4,11 +4,11 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import { MouseEventHandler } from "react";
 import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
 import NavbarMenuItems from "./navbar-menu-items";
+import AnimatedLink from "./animated-link";
 
 interface navbarMenuOptions {
   isOpen: boolean;
@@ -92,15 +92,15 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
           </div>
           <div className="flex flex-col">
             {socialProps.map((props, index) => (
-              <Link
+              <AnimatedLink
                 href={props.link}
                 key={index}
                 className="uppercase flex flex-row items-center gap-1 group"
-                target="_blank" rel="noreferrer noopener"
+                hasTarget={true}
               >
                 {props.name}
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-              </Link>
+              </AnimatedLink>
             ))}
           </div>
           <div className="flex flex-col justify-end">
