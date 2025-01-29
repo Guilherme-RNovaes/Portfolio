@@ -7,8 +7,8 @@ import { useRef } from "react";
 import NavigationProps from "@/config/navigation";
 import { socialProps } from "@/config/social";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import userProps from "@/config/user";
+import AnimatedLink from "./animated-link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,27 +40,27 @@ const Footer = () => {
       <div className="flex flex-row md:flex-col items-start justify-between gap-20 pb-10 w-full">
         <div className="flex flex-col md:flex-row gap-5 md:gap-10 w-full">
           {NavigationProps.map((props, index) => (
-            <Link
+            <AnimatedLink
               href={props.href}
               key={index}
-              className="uppercase flex flex-row items-center gap-1 group"
+              className="light uppercase flex flex-row items-center gap-1 group"
             >
               {props.name}
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-            </Link>
+            </AnimatedLink>
           ))}
         </div>
         <div className="flex flex-col md:flex-row gap-5 md:gap-10 justify-end w-full">
           {socialProps.map((props, index) => (
-            <Link
+            <AnimatedLink
               href={props.link}
               key={index}
-              className="uppercase text-sub hover:text-foreground transition-colors flex flex-row items-center gap-1"
-              target="_blank" rel="noreferrer noopener"
+              className="light uppercase text-sub hover:text-foreground transition-colors flex flex-row items-center gap-1"
+              hasTarget={true}
             >
               <props.icon className="w-4 h-4" />
               <p>{props.name}</p>
-            </Link>
+            </AnimatedLink>
           ))}
         </div>
       </div>
