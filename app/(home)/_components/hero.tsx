@@ -1,11 +1,11 @@
 'use client'
 
+import AnimatedLink from "@/app/_components/animated-link";
 import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import { useRef } from "react";
 
 const HeroSection = () => {
@@ -123,15 +123,15 @@ const HeroSection = () => {
           </div>
           <div className="flex flex-col md:flex-row md:gap-10">
             {socialProps.map((props, index) => (
-              <Link
+              <AnimatedLink
                 href={props.link}
                 key={index}
                 className="uppercase flex flex-row items-center gap-1 group"
-                target="_blank" rel="noreferrer noopener"
+                hasTarget={true}
               >
                 {props.name}
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-              </Link>
+              </AnimatedLink>
             ))}
           </div>
         </div>
