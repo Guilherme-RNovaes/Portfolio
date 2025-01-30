@@ -9,6 +9,7 @@ import { socialProps } from "@/config/social";
 import userProps from "@/config/user";
 import NavbarMenuItems from "./navbar-menu-items";
 import AnimatedLink from "./animated-link";
+import Image from "next/image";
 
 interface navbarMenuOptions {
   isOpen: boolean;
@@ -67,10 +68,10 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
   return (
     <div
       ref={menuRef}
-      className={`${isOpen ? "flex" : "hidden"} flex-col justify-between fixed inset-0 z-50 h-full p-12 bg-background`}
+      className={`${isOpen ? "flex" : "hidden"} flex-col justify-between fixed inset-0 z-50 h-full pt-6 px-8 pb-12 bg-background`}
     >
-      <div ref={headerRef} className="flex justify-between">
-        <h1 className="font-bold text-2xl">GN</h1>
+      <div ref={headerRef} className="flex justify-between pl-2">
+        <Image src="/images/logo-white.png" alt="GN logo image" width={30} height={30} />
         <button
           className="decoration-transparent hover-target uppercase text-2xl font-medium"
           onClick={toggleMenu}

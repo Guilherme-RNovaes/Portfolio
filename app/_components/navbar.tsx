@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import NavbarMenu from "./navbar-menu";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,13 +34,15 @@ const Navbar = () => {
       >
         <Button asChild variant='default' className="rounded-xl shadow-xl">
           <Link href="/#home">
-            <h1 className="text-black font-semibold text-xl">GN</h1>
+            <Image src="/images/logo-dark.png" alt="GN logo image" width={30} height={30} />
           </Link>
         </Button>
         <NavbarItems />
         <Button onClick={toggleMenu} className='rounded-xl z-50 shadow-xl'>
-          <Menu />
-          <span className="hidden md:block">Menu</span>
+          <div className="flex flex-col items-center justify-between gap-1">
+            <div className="bg-background w-10 h-[2px]" />
+            <div className="bg-background w-10 h-[2px]" />
+          </div>
         </Button>
       </div>
       <NavbarMenu isOpen={isOpen} toggleMenu={toggleMenu} />
