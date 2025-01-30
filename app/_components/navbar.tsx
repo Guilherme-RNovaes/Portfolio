@@ -5,7 +5,6 @@ import NavbarItems from "./navbar-items";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu } from "lucide-react";
 import NavbarMenu from "./navbar-menu";
 import Image from "next/image";
 
