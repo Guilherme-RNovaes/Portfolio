@@ -71,7 +71,7 @@ const NavbarMenu = ({ isOpen, toggleMenu }: navbarMenuOptions) => {
       className={`${isOpen ? "flex" : "hidden"} flex-col justify-between fixed inset-0 z-50 h-full pt-6 px-8 pb-12 bg-background`}
     >
       <div ref={headerRef} className="flex justify-between pl-2">
-        <Image src="/images/logo-white.png" alt="GN logo image" width={30} height={30} />
+        <Image src="/images/logo-white.svg" alt="GN logo image" width={40} height={40} />
         <button
           className="decoration-transparent hover-target uppercase text-2xl font-medium"
           onClick={toggleMenu}

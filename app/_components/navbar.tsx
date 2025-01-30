@@ -33,7 +33,7 @@ const Navbar = () => {
       >
         <Button asChild variant='default' className="rounded-xl shadow-xl">
           <Link href="/#home">
-            <Image src="/images/logo-dark.png" alt="GN logo image" width={30} height={30} />
+            <Image src="/images/logo-dark.svg" alt="GN logo image" width={40} height={40} />
           </Link>
         </Button>
         <NavbarItems />
