@@ -29,7 +29,6 @@ const Services = () => {
           start: "-25% 80%",
           end: "-25% 50%",
           toggleActions: "play play reverse reverse",
-          markers: true,
         }
       }
     )
