@@ -23,8 +23,8 @@ const Contact = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: contactRef.current,
-        start: "top center",
-        end: "top center",
+        start: "-10% center",
+        end: "-10% center",
         toggleActions: "play none none none",
       }
     })

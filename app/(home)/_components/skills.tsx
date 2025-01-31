@@ -25,8 +25,8 @@ const Skills = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: skillContainerElement,
-          start: "top 80%",
-          end: "top 50%",
+          start: "-15% 80%",
+          end: "-15% 50%",
           toggleActions: "play play reverse reverse"
         }
       })

@@ -26,9 +26,10 @@ const Services = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: servicesContainerElement,
-          start: "top 80%",
-          end: "top 50%",
-          toggleActions: "play play reverse reverse"
+          start: "-25% 80%",
+          end: "-25% 50%",
+          toggleActions: "play play reverse reverse",
+          markers: true,
         }
       }
     )
