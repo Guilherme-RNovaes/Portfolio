@@ -16,7 +16,7 @@ const HeroSection = () => {
 
     tl.fromTo(
       ".loader",
-      { x: "-100%" },
+      { x: "-100%", scaleY: 0.002 },
       {
         x: "0%",
         ease: "power4.inOut",
@@ -25,10 +25,10 @@ const HeroSection = () => {
     );
 
     tl.fromTo(
-      ".loader-first-bg",
-      { scaleY: "100%" },
+      ".loader",
+      { scaleY: 0.002 },
       {
-        scaleY: "0%",
+        scaleY: 1,
         ease: "power4.inOut",
         duration: 1.5,
       }
@@ -36,13 +36,24 @@ const HeroSection = () => {
 
     tl.fromTo(
       ".loader-second-bg",
-      { scaleY: "100%" },
+      { scaleY: "0%" },
       {
-        scaleY: "0%",
+        scaleY: "100%",
         ease: "power4.inOut",
-        duration: 1.4,
+        duration: 1.5,
       },
       "-=1.2"
+    );
+
+    tl.fromTo(
+      ".loader-first-bg",
+      { opacity: "100%" },
+      {
+        opacity: "0%",
+        ease: "power4.inOut",
+        duration: 1,
+      },
+      "-=0.5"
     );
 
     tl.fromTo(
@@ -72,9 +83,10 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="fixed top-0 left-0 loader-first-bg bg-black min-h-screen w-screen z-[150] flex items-center overflow-hidden">
-        <div className="w-full loader -translate-x-[100%] h-[1px] bg-white" />
+        <div className="w-full loader -translate-x-[100%] min-h-screen bg-white">
+          <div className="fixed top-0 left-0 loader-second-bg bg-background min-h-screen w-screen z-[140] flex items-center" />
+        </div>
       </div>
-      <div className="fixed top-0 left-0 loader-second-bg bg-white min-h-screen w-screen z-[140] flex items-center" />
       <div className="min-h-screen w-screen flex flex-col items-center justify-between bg-background pb-16 pt-28 px-8">
         <div
           ref={textContainerRef}
