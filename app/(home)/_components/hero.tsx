@@ -50,6 +50,7 @@ const HeroSection = () => {
       { opacity: "100%" },
       {
         opacity: "0%",
+        display: "none",
         ease: "power4.inOut",
         duration: 1,
       },
