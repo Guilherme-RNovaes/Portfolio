@@ -18,8 +18,8 @@ const SkillCard = ({ icon: Icon, cardNum, title, text, liOne, liTwo, liThree }: 
       <div className="flex flex-row w-full items-start py-2 justify-between">
         <p className="text-xl w-[20%] md:w-[50%] md:text-4xl xl:text-6xl font-semibold">({cardNum})</p>
         <div className="flex flex-col w-full gap-16">
-          <div className="flex flex-row w-full justify-between">
-            <h1 className="text-xl w-full md:text-4xl xl:text-6xl font-light">{title}</h1>
+          <div className="flex flex-row w-full justify-between items-center">
+            <h1 className="text-md w-full md:text-4xl xl:text-6xl font-semibold md:font-light">{title}</h1>
             <Icon className="w-8 md:w-16 h-8 md:h-16 text-sub" />
           </div>
           <div className="flex flex-col gap-10">
@@ -50,7 +50,7 @@ const SkillCardsContainer = () => {
     <div
       className="flex flex-col items-center w-full justify-between relative"
     >
-      <div className="sticky top-32 md:top-56 w-full h-full">
+      <div className="sticky top-0 w-full h-full mb-[10em] md:mb-[12em]" style={{ top: "calc(20vh + 0em)" }}>
         <SkillCard
           icon={ArrowRightCircle}
           cardNum="01"
@@ -61,7 +61,7 @@ const SkillCardsContainer = () => {
           liThree="Design Focado em Conversões e SEO"
         />
       </div>
-      <div className="sticky top-[200px] md:top-[330px] w-full h-full">
+      <div className="sticky top-0 w-full h-full mb-[5em] md:mb-[7em]" style={{ top: "calc(20vh + 5em)" }}>
         <SkillCard
           icon={MonitorSmartphone}
           cardNum="02"
@@ -72,7 +72,7 @@ const SkillCardsContainer = () => {
           liThree="Design Funcional e Impressionante"
         />
       </div>
-      <div className="sticky top-[300px] md:top-[430px] w-full h-full">
+      <div className="sticky top-0 w-full h-full mb-[0em] md:mb-[2em]" style={{ top: "calc(20vh + 0em)" }}>
         <SkillCard
           icon={LifeBuoy}
           cardNum="03"
