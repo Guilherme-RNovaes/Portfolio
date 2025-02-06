@@ -6,8 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import userProps from "@/config/user";
 import { motion } from "motion/react";
-import SocialButtons from "./social-buttons";
-import { fromBottomAnimation, fromLeftAnimation, fromRightAnimation } from "@/config/animations";
+import { fromRightAnimation } from "@/config/animations";
 import Image from "next/image";
 import Skills from "./skills";
 
