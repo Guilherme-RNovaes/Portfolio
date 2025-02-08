@@ -37,9 +37,9 @@ const Portfolio = () => {
       {
         x: "0%",
         opacity: 1,
-        duration: 1,
-        ease: "power.inOut",
-        stagger: 1,
+        duration: 5,
+        ease: "power1.inOut",
+        stagger: 5,
         scrollTrigger: {
           trigger: PortfolioContainerElement,
           start: "top 100%",
@@ -98,7 +98,7 @@ const Portfolio = () => {
           ))}
         </div>
       </header>
-      <div ref={containerRef} className="flex flex-col gap-10 md:gap-20 ">
+      <div ref={containerRef} className="flex flex-col gap-10 md:gap-20 overflow-hidden">
         {myProjects}
       </div>
     </div >
