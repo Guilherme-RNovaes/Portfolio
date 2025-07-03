@@ -31,13 +31,13 @@ const Navbar = () => {
       <div
         className="gap-2 w-full flex flex-row justify-between items-center "
       >
-        <Button asChild variant='default' className="rounded-xl shadow-xl">
+        <Button asChild variant='default' className="rounded-sm shadow-xl">
           <Link href="/#home">
             <Image src="/images/logo-dark.svg" alt="GN logo image" width={40} height={40} />
           </Link>
         </Button>
         <NavbarItems />
-        <Button onClick={toggleMenu} className='rounded-xl z-50 shadow-xl'>
+        <Button onClick={toggleMenu} className='rounded-sm z-50 shadow-xl'>
           <div className="flex flex-col items-center justify-between gap-1">
             <div className="bg-background w-10 h-[2px]" />
             <div className="bg-background w-10 h-[2px]" />

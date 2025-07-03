@@ -23,21 +23,21 @@ const PortfolioCard = ({ direction, name, imgMobile, imgDesktop, year, services,
     >
       <Link
         href={link} target="_blank" rel="noreferrer noopener"
-        className={`relative w-[90vw] md:w-[95vw] h-[90vh] mb-8 md:mb-0 rounded-xl hover-projects overflow-hidden group`}
+        className={`relative w-[90vw] md:w-[95vw] h-[90vh] mb-8 md:mb-0 rounded-sm hover-projects overflow-hidden group`}
       >
-        <Image src={imgMobile} fill alt="project image" className="block md:hidden rounded-xl object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
-        <Image src={imgDesktop} fill alt="project image" className="hidden md:block rounded-xl object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
+        <Image src={imgMobile} fill alt="project image" className="block md:hidden rounded-sm object-fill transition-transform duration-300 ease-in-out group-hover:scale-105" />
+        <Image src={imgDesktop} fill alt="project image" className="hidden md:block rounded-sm object-fill transition-transform duration-300 ease-in-out group-hover:scale-105" />
         <div className={`absolute bottom-0 bg-black/20 backdrop-blur-xl w-full flex flex-col items-center gap-2 md:gap-6 py-2 md:py-10 ${isRightDirection ? 'md:items-center' : 'md:items-center md:text-center'}`}>
           <h1 className="text-xl md:text-7xl uppercase text-center">{name}</h1>
           <div className={`flex items-center w-full max-w-[500px] justify-center ${isRightDirection ? 'md:justify-center' : 'md:justify-center'} gap-2 flex-wrap`}>
             {
               services.map((services, index) => (
-                <Badge variant="outline" key={index}>
+                <Badge variant="outline" key={index} className="rounded-sm">
                   <p className="font-light text-sub text-sm md:text-lg">{services}</p>
                 </Badge>
               ))
             }
-            <Badge variant="default">
+            <Badge variant="default" className="rounded-sm">
               <p className="font-light text-sm md:text-lg">{year}</p>
             </Badge>
           </div>

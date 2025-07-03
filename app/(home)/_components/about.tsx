@@ -76,7 +76,7 @@ const About = () => {
           </div>
         </div>
       </header>
-      <div className="flex flex-col-reverse lg:flex-row max-w-[1920px] items-center mb-12 md:mb-36 justify-between w-full overflow-hidden">
+      <div className="flex flex-col-reverse lg:flex-row-reverse max-w-[1920px] items-center mb-12 md:mb-36 justify-between w-full overflow-hidden">
         <div ref={containerRef} className="max-w-3xl">
           {userProps.about.split("").map((char, i) => (
             <span key={i} className="about-reveal font-light text-xl md:text-2xl xl:text-4xl">
@@ -93,7 +93,7 @@ const About = () => {
           className="relative flex flex-col gap-2 mb-12 lg:mb-0"
         >
           <Image src='/images/rotate-text.png' width={400} height={400} className="w-[200px] md:w-[400px] h-[200px] md:h-[400px] animate-rotate absolute inset-0 m-auto z-0" alt="rotative text" />
-          <Image src={userProps.imageUrl} alt="user image" width={600} height={600} className="object-cover rounded drop-shadow-custom z-10" />
+          <Image src={userProps.imageUrl} alt="user image" width={600} height={600} className="object-cover rounded drop-shadow-custom z-10 scale-x-[-1]" />
           <div className="absolute inset-0 z-20 bg-gradient-to-t from-background to-transparent"></div>
         </motion.div>
       </div>
