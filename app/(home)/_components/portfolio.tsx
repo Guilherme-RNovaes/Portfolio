@@ -73,8 +73,8 @@ const Portfolio = () => {
         key={props.name}
         direction={props.direction}
         name={props.name}
-        img={props.img}
-        description={props.description}
+        imgMobile={props.imgMobile}
+        imgDesktop={props.imgDesktop}
         services={props.services}
         year={props.year}
         link={props.link}
