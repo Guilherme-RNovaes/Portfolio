@@ -10,6 +10,18 @@ export interface project {
 
 export const projectProps: project[] = [
   {
+    name: 'Psicóloga-Francine',
+    description: 'Landing Page',
+    services: [
+      'Desenvolvimento',
+      'Landing Page',
+    ],
+    year: 2025,
+    link: 'https://lp-francine-sanches.vercel.app/',
+    img: '/images/psicologa_francine.png',
+    direction: 'left',
+  },
+  {
     name: 'Finanças-AI',
     description: 'Gestão financeira & Inteligencia Artificial',
     services: [
@@ -22,21 +34,6 @@ export const projectProps: project[] = [
     year: 2025,
     link: '/production',
     img: '/images/finance_ai.png',
-    direction: 'left',
-  },
-  {
-    name: 'Case-Cobra',
-    description: 'E-Commerce & Inteligência Artificial',
-    services: [
-      'Desenvolvimento',
-      'Landing Page',
-      'Banco de dados',
-      'Autenticação',
-      'Metodos de pagamento'
-    ],
-    year: 2025,
-    link: 'https://casecobra-one-teal.vercel.app/',
-    img: '/images/case_cobra_ecommerce.png',
     direction: 'right',
   },
   {
