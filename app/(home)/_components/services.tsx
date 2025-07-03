@@ -71,7 +71,7 @@ const Services = () => {
         className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-4 xl:gap-0 w-full mb-20 md:mb-40"
       >
         <div ref={containerRef} className="overflow-hidden w-full">
-          <h1 className="servicestext-reveal translate-y-[115%] text-6xl md:text-7xl xl:text-9xl font-light tracking-wide">Serviços</h1>
+          <h1 className="servicestext-reveal pb-[2px] translate-y-[115%] text-6xl md:text-7xl xl:text-9xl font-light tracking-wide">Serviços</h1>
         </div>
         <div ref={containerRef} className="max-w-2xl text-right">
           {userProps.aboutServices.split("").map((char, i) => (
@@ -85,10 +85,10 @@ const Services = () => {
         {services.map((props, index) => (
           <div
             key={index}
-            className={`${props.side === 'left' ? 'mr-0 md:mr-14 -translate-x-[10%]' : 'mr-0 md:ml-14 translate-x-[10%]'} services-card opacity-0 flex items-center justify-between border border-sub rounded-full px-6 py-6 md:px-10 md:py-10 lg:py-16 md:gap-10 xl:gap-20`}
+            className={`${props.side === 'left' ? 'mr-0 md:mr-14 -translate-x-[10%]' : 'mr-0 md:ml-14 translate-x-[10%]'} services-card opacity-0 flex items-center justify-between border-b border-sub px-6 py-6 md:px-10 md:py-10 lg:py-16 md:gap-10 xl:gap-20`}
           >
             <h1 className="font-light text-2xl md:text-3xl lg:text-5xl">{props.name}</h1>
-            <div className="border border-sub rounded-full p-4 md:px-6 lg:px-8 md:py-2">
+            <div className="border border-sub rounded-sm p-4 md:px-6 lg:px-8 md:py-2">
               <props.icon size={26} />
             </div>
           </div>
