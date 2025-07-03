@@ -20,7 +20,7 @@ const HeroSection = () => {
       {
         x: "0%",
         ease: "power4.inOut",
-        duration: 3,
+        duration: 1.5,
       }
     );
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
       {
         scaleY: 1,
         ease: "power4.inOut",
-        duration: 1.5,
+        duration: 1,
       }
     );
 
@@ -40,9 +40,9 @@ const HeroSection = () => {
       {
         scaleY: "100%",
         ease: "power4.inOut",
-        duration: 1.5,
+        duration: 1,
       },
-      "-=1.2"
+      "-=0.7"
     );
 
     tl.fromTo(
@@ -52,7 +52,7 @@ const HeroSection = () => {
         opacity: "0%",
         display: "none",
         ease: "power4.inOut",
-        duration: 1,
+        duration: 0.5,
       },
       "-=0.5"
     );
